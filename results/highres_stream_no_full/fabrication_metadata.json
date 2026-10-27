@@ -1,0 +1,161 @@
+{
+  "physics": {
+    "energy_kev": 14.0,
+    "material": "Si",
+    "density_g_cm3": 2.329,
+    "delta": 2.4791794807699606e-06,
+    "beta": 1.903786981722635e-08,
+    "wavelength_m": 8.856014173800019e-11,
+    "attenuation_length_mm": 0.35401499810779236,
+    "requested_phase_change_rad": 3.141592653589793,
+    "phase_height_m": 1.7860776604704713e-05,
+    "phase_height_um": 17.860776604704714,
+    "simulation_pixel_um": 0.5,
+    "simulation_supercells": 2,
+    "export_pixel_um": 0.05
+  },
+  "requested_geometry": {
+    "width_mm": 13.3,
+    "height_mm": 13.3,
+    "export_pixel_um": 0.05,
+    "z_m": 0.4
+  },
+  "simulation_geometry": {
+    "pixel_um": 0.5,
+    "supercells_per_axis": 2,
+    "shape_px": [
+      224,
+      224
+    ],
+    "extent_mm": [
+      0.112,
+      0.112
+    ]
+  },
+  "export_geometry": {
+    "rows": 266000,
+    "cols": 266000,
+    "actual_width_mm": 13.3,
+    "actual_height_mm": 13.3,
+    "base_supercell_um": 56.0,
+    "base_tile_pixels": [
+      1120,
+      1120
+    ],
+    "base_supercell_pixels": 1120,
+    "periodic_base_shape_px": [
+      224,
+      224
+    ],
+    "periodic_base_extent_mm": [
+      0.112,
+      0.112
+    ],
+    "streaming_export": {
+      "full_aperture_array_in_memory": false,
+      "npy_chunk_rows": 64,
+      "tiff_tile_px": 1024,
+      "save_npy": false,
+      "save_tiff": false
+    }
+  },
+  "design": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 112,
+    "n_supercells": 2,
+    "image_size_px": null,
+    "wavelength_m": 8.856014173800019e-11,
+    "z_m": 0.4,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "resolution": {
+    "pixel_um": 0.05,
+    "carrier_periods": {
+      "S4": {
+        "period_um": [
+          8.0,
+          8.0,
+          7.919595949289332,
+          7.919595949289332
+        ],
+        "samples_per_period": [
+          160.0,
+          160.0,
+          158.39191898578662,
+          158.39191898578662
+        ],
+        "minimum_samples_per_period": 158.39191898578662
+      },
+      "H3": {
+        "period_um": [
+          9.333333333333334,
+          9.603920767980494,
+          9.603920767980494
+        ],
+        "samples_per_period": [
+          186.66666666666666,
+          192.07841535960986,
+          192.07841535960986
+        ],
+        "minimum_samples_per_period": 186.66666666666666
+      },
+      "CUC_hex": {
+        "period_um": [
+          9.333333333333334,
+          9.603920767980494
+        ],
+        "samples_per_period": [
+          186.66666666666666,
+          192.07841535960986
+        ],
+        "minimum_samples_per_period": 186.66666666666666
+      }
+    },
+    "minimum_binary_run_pixels": {
+      "S4": 2,
+      "H3": 3,
+      "CUC_hex": 1
+    },
+    "minimum_binary_run_um": {
+      "S4": 0.1,
+      "H3": 0.15000000000000002,
+      "CUC_hex": 0.05
+    },
+    "carrier_sampling_status": "adequate",
+    "binary_edge_sampling_status": "under_resolved",
+    "recommended_layout_pixel_um": 0.49497474683058323,
+    "recommendation": "Use approximately 0.5 um or finer layout sampling for fabrication; 2 um is a detector-resolution raster and is not sufficient for clean binary edge geometry."
+  },
+  "patterns": [
+    "S4",
+    "H3",
+    "CUC_hex"
+  ],
+  "files": {
+    "S4": {
+      "gds": "S4_mask.gds",
+      "png": "S4_center.png",
+      "encoding": "boolean mask; false=0 phase, true=target phase",
+      "png_content": "central 128 px crop enlarged to 256 px with nearest-neighbor sampling"
+    },
+    "H3": {
+      "gds": "H3_mask.gds",
+      "png": "H3_center.png",
+      "encoding": "boolean mask; false=0 phase, true=target phase",
+      "png_content": "central 128 px crop enlarged to 256 px with nearest-neighbor sampling"
+    },
+    "CUC_hex": {
+      "gds": "CUC_hex_mask.gds",
+      "png": "CUC_hex_center.png",
+      "encoding": "boolean mask; false=0 phase, true=target phase",
+      "png_content": "central 128 px crop enlarged to 256 px with nearest-neighbor sampling"
+    }
+  },
+  "note": "Optimization and propagation use a small periodic simulation window. The selected candidates are regenerated on a real-pixel periodic export tile before the full aperture is assembled. The requested 13.3 mm extent is 237.5 nominal 56 um supercells; the raster therefore ends halfway through a supercell. The GDS uses reusable tile and partial-tile cells with AREF placement. Use a finer fabrication writer grid and convert true/false levels to material heights using phase_height_um."
+}

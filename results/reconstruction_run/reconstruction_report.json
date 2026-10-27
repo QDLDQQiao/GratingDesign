@@ -1,0 +1,56 @@
+{
+  "config": {
+    "dx_m": 4.375e-07,
+    "wavelength_m": 1e-10,
+    "z_eff_m": 0.3,
+    "carriers": [
+      [
+        14,
+        0
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        -10
+      ]
+    ],
+    "samples_per_supercell": 128,
+    "n_supercells": 2,
+    "guard_bins": 3,
+    "visibility": 0.142470873981641,
+    "mean_intensity": 1.0,
+    "smoothing_sigma_px": 0.0
+  },
+  "metrics": {
+    "phase_rmse_rad": 2.4816404836059015e-05,
+    "phase_mae_rad": 2.1813627827743125e-05,
+    "gradient_x_rmse": 4.408626529059422,
+    "gradient_y_rmse": 0.12321148048976166,
+    "transmission_rmse": 1.2582405051699161e-07,
+    "transmission_mae": 1.037094192667738e-07,
+    "dark_field_mean_rmse": 5.5064721783981074e-05,
+    "dark_field_anisotropy_rmse": 0.0023514865734842803,
+    "dark_field_angle_mae_deg": 0.14717068257489826
+  },
+  "files": {
+    "phase_reconstruction": "phase_reconstruction.npy",
+    "phase_truth": "phase_truth.npy",
+    "phase_error": "phase_error.npy",
+    "transmission_reconstruction": "transmission_reconstruction.npy",
+    "dark_field_mean": "dark_field_mean.npy",
+    "dark_field_anisotropy": "dark_field_anisotropy.npy",
+    "summary_plot": "reconstruction_summary.png",
+    "transmission_truth": "transmission_truth.npy",
+    "transmission_error": "transmission_error.npy",
+    "dark_field_truth": "dark_field_truth.npy",
+    "dark_field_mean_truth": "dark_field_mean_truth.npy",
+    "dark_field_mean_error": "dark_field_mean_error.npy"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_sigma_angle_rad": 4.246609001440095e-07,
+  "source_blur_sigma_um": 0.12846817972577432,
+  "focal_length_m": 0.30251944476689197,
+  "fabrication_resolution_um": 0.2,
+  "simulation_resolution_um": 0.2,
+  "gaussian_intensity_fwhm_um": 150.0,
+  "source_size_fwhm_um": 30.0,
+  "source_distance_m": 30.0,
+  "source_modes": 15,
+  "fwhm_um": {
+    "ideal_coherent": 0.17860748019037306,
+    "fabricated_coherent": 0.17860748019037306,
+    "ideal_partial": 0.3572149603807461,
+    "fabricated_partial": 0.3572149603807461
+  },
+  "peak_intensity": {
+    "ideal_coherent": 0.2475310112177042,
+    "fabricated_coherent": 0.2475310112177042,
+    "ideal_partial": 0.11736298130866679,
+    "fabricated_partial": 0.11736298130866682
+  },
+  "relative_peak": {
+    "fabricated_over_ideal_coherent": 1.0,
+    "fabricated_over_ideal_partial": 1.0000000000000002
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "design": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 128,
+    "n_supercells": 2,
+    "image_size_px": null,
+    "wavelength_m": 1e-10,
+    "z_m": 0.08,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "photons_per_pixel": 3000.0,
+  "repeats": 3,
+  "objective": "normalized sum of phase, T, D mean, D anisotropy, and D angle errors",
+  "best": {
+    "smoothing_sigma_px": 8.0,
+    "window_sigma_bins": 0.0,
+    "phase_rmse_rad": 0.01496139829127331,
+    "transmission_rmse": 0.0005327543482861427,
+    "dark_field_mean_rmse": 0.0015172418047686603,
+    "dark_field_anisotropy_rmse": 0.0980663481556137,
+    "dark_field_angle_mae_deg": 8.094849771966498,
+    "score": 3.502705796801546
+  },
+  "rows": [
+    {
+      "smoothing_sigma_px": 8.0,
+      "window_sigma_bins": 0.0,
+      "phase_rmse_rad": 0.01496139829127331,
+      "transmission_rmse": 0.0005327543482861427,
+      "dark_field_mean_rmse": 0.0015172418047686603,
+      "dark_field_anisotropy_rmse": 0.0980663481556137,
+      "dark_field_angle_mae_deg": 8.094849771966498,
+      "score": 3.502705796801546
+    },
+    {
+      "smoothing_sigma_px": 5.0,
+      "window_sigma_bins": 0.0,
+      "phase_rmse_rad": 0.015161995358830253,
+      "transmission_rmse": 0.000493259574881671,
+      "dark_field_mean_rmse": 0.0016012352198414067,
+      "dark_field_anisotropy_rmse": 0.105001707852465,
+      "dark_field_angle_mae_deg": 8.60304704835493,
+      "score": 3.61229304326248
+    },
+    {
+      "smoothing_sigma_px": 2.0,
+      "window_sigma_bins": 0.0,
+      "phase_rmse_rad": 0.015308461253095327,
+      "transmission_rmse": 0.0004961956621096237,
+      "dark_field_mean_rmse": 0.0016517196990358293,
+      "dark_field_anisotropy_rmse": 0.10904587875784173,
+      "dark_field_angle_mae_deg": 8.905343943039528,
+      "score": 3.704985493638535
+    },
+    {
+      "smoothing_sigma_px": 0.0,
+      "window_sigma_bins": 0.0,
+      "phase_rmse_rad": 0.015339568911776938,
+      "transmission_rmse": 0.0004987743996749668,
+      "dark_field_mean_rmse": 0.0016617622795275647,
+      "dark_field_anisotropy_rmse": 0.10984186421898207,
+      "dark_field_angle_mae_deg": 8.965561471784044,
+      "score": 3.7254692269992145
+    },
+    {
+      "smoothing_sigma_px": 0.0,
+      "window_sigma_bins": 2.0,
+      "phase_rmse_rad": 0.01596710327301904,
+      "transmission_rmse": 0.001700115056256523,
+      "dark_field_mean_rmse": 0.0012566463751271975,
+      "dark_field_anisotropy_rmse": 0.06063933274436823,
+      "dark_field_angle_mae_deg": 5.2437859794728245,
+      "score": 4.055434223714145
+    },
+    {
+      "smoothing_sigma_px": 2.0,
+      "window_sigma_bins": 2.0,
+      "phase_rmse_rad": 0.015995851077898405,
+      "transmission_rmse": 0.001714414795624392,
+      "dark_field_mean_rmse": 0.001257618259942651,
+      "dark_field_anisotropy_rmse": 0.060386611846469956,
+      "dark_field_angle_mae_deg": 5.221961502333847,
+      "score": 4.067790042033822
+    },
+    {
+      "smoothing_sigma_px": 5.0,
+      "window_sigma_bins": 2.0,
+      "phase_rmse_rad": 0.01614993505606461,
+      "transmission_rmse": 0.0017892658736498,
+      "dark_field_mean_rmse": 0.0012637822044432043,
+      "dark_field_anisotropy_rmse": 0.05910056985851327,
+      "dark_field_angle_mae_deg": 5.110090563308802,
+      "score": 4.133666584062268
+    },
+    {
+      "smoothing_sigma_px": 8.0,
+      "window_sigma_bins": 2.0,
+      "phase_rmse_rad": 0.016448450818209844,
+      "transmission_rmse": 0.0019272012700277772,
+      "dark_field_mean_rmse": 0.0012796334544561904,
+      "dark_field_anisotropy_rmse": 0.056881080220625685,
+      "dark_field_angle_mae_deg": 4.913999078952593,
+      "score": 4.260047647532462
+    },
+    {
+      "smoothing_sigma_px": 0.0,
+      "window_sigma_bins": 1.0,
+      "phase_rmse_rad": 0.025318515580919455,
+      "transmission_rmse": 0.005336278658546406,
+      "dark_field_mean_rmse": 0.0025253315383835895,
+      "dark_field_anisotropy_rmse": 0.028725203017096912,
+      "dark_field_angle_mae_deg": 2.3518541158520545,
+      "score": 8.291556971816693
+    },
+    {
+      "smoothing_sigma_px": 2.0,
+      "window_sigma_bins": 1.0,
+      "phase_rmse_rad": 0.025340900052562777,
+      "transmission_rmse": 0.005345506506499239,
+      "dark_field_mean_rmse": 0.0025295855810773178,
+      "dark_field_anisotropy_rmse": 0.028676937420318505,
+      "dark_field_angle_mae_deg": 2.348523805991641,
+      "score": 8.303376263067324
+    },
+    {
+      "smoothing_sigma_px": 5.0,
+      "window_sigma_bins": 1.0,
+      "phase_rmse_rad": 0.025457536864806157,
+      "transmission_rmse": 0.005393737577146102,
+      "dark_field_mean_rmse": 0.002551855609619066,
+      "dark_field_anisotropy_rmse": 0.028425653528130295,
+      "dark_field_angle_mae_deg": 2.3313714978319866,
+      "score": 8.365183731833342
+    },
+    {
+      "smoothing_sigma_px": 8.0,
+      "window_sigma_bins": 1.0,
+      "phase_rmse_rad": 0.025670259088280283,
+      "transmission_rmse": 0.0054823590271848195,
+      "dark_field_mean_rmse": 0.002592927679679737,
+      "dark_field_anisotropy_rmse": 0.02796814242556267,
+      "dark_field_angle_mae_deg": 2.300654825573751,
+      "score": 8.478855586833161
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "model": "ideal_focusing_optic",
+  "simulation_field_size_um": [
+    32.800000000000004,
+    32.800000000000004
+  ],
+  "simulation_raster_resolution_um": 0.1,
+  "simulation_pupil_diameter_um": 32.800000000000004,
+  "fabrication_field_size_um": [
+    2000.0,
+    2000.0
+  ],
+  "fabrication_raster_resolution_um": 0.1,
+  "fabrication_constraints": {
+    "design_and_fabrication_raster_um": 0.1,
+    "period_pixels": 41,
+    "minimum_samples_per_period": 16,
+    "effective_period_um": 4.1000000000000005,
+    "effective_beamlet_separation_um": 10.080000000000002,
+    "period_quantization_error_percent": -0.7936507936507908
+  },
+  "captured_target_power": 0.2933500927048847,
+  "order_uniformity_min_over_mean": 0.8859569989745065,
+  "integration_radius_um": 1.512,
+  "focal_pixel_um": 0.31500000000002615,
+  "reference_fwhm_estimate_um": 1.29528,
+  "order_coordinates_um": [
+    -20.16,
+    -10.08,
+    0.0,
+    10.08,
+    20.16
+  ],
+  "detector_plane": {
+    "distance_after_focus_m": 1.0,
+    "first_order_spacing_um": 35.279999999999994,
+    "nominal_beamlet_envelope_diameter_um": 82.00000000000001,
+    "detector_pixel_um": 2.205000000000041,
+    "order_coordinates_um": [
+      -70.55999999999999,
+      -35.279999999999994,
+      0.0,
+      35.279999999999994,
+      70.55999999999999
+    ]
+  }
+}

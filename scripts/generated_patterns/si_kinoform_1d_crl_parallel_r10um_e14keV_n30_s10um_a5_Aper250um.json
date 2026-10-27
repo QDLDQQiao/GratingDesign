@@ -1,0 +1,43 @@
+{
+  "radius_um": 10.0,
+  "xray_energy_keV": 14.0,
+  "number_of_crls": 30,
+  "crl_spacing_um": 10.0,
+  "array_count": 5,
+  "array_spacing_um": 50.0,
+  "aperture_um": 250.0,
+  "support_width_um": 300.0,
+  "raster_resolution_um": 0.1,
+  "fixed_etch_depth_um": 150.0,
+  "crl_length_um": null,
+  "central_wall_um": 15.0,
+  "frame_margin_um": 10.0,
+  "support_web_width_um": 2.0,
+  "material": "Si",
+  "density_g_cm3": 2.329,
+  "wavelength_um": 8.856e-05,
+  "delta": 2.4791794807699606e-06,
+  "beta": 1.903786981722635e-08,
+  "two_pi_path_jump_um": 35.721496038074605,
+  "focal_length_um": 67226.54328153156,
+  "focal_length_m": 0.06722654328153156,
+  "pattern_class": "KinoformCRL1D",
+  "array_shape_yx": [
+    29033,
+    17200
+  ],
+  "field_size_um": [
+    2903.289762284476,
+    1720.0
+  ],
+  "support_rectangle_width_um": 1720.0,
+  "single_surface_length_um": 35.721496038074605,
+  "crl_cell_length_um": 86.44299207614921,
+  "single_array_height_um": 2883.289762284476,
+  "single_array_width_um": 300.0,
+  "array_layout": "array_count parallel serial CRL trains aligned side-by-side along x",
+  "focal_length_formula": "f = R / (2 * N * delta)",
+  "incidence_geometry": "X-rays propagate parallel to the silicon surface; the plan-view kinoform is etched vertically to fixed_etch_depth_um",
+  "mask_semantics": "one denotes a fixed-depth etched void; zero denotes retained silicon, including the concave kinoform and its support frame/webs",
+  "gds_layer_semantics": "layer 1 is the fixed-depth etch around the retained kinoform material; layer 100 is an optional support-outline annotation"
+}

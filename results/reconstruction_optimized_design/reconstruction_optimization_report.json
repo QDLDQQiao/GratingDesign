@@ -1,0 +1,1445 @@
+{
+  "config": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 128,
+    "n_supercells": 2,
+    "wavelength_m": 1e-10,
+    "z_m": 0.3,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "benchmark": {
+    "photons_per_pixel": 10000.0,
+    "phase_amplitude_rad": 0.08,
+    "absorption_peak_mu": 0.05,
+    "dark_field_mean": 0.035,
+    "dark_field_anisotropy": 0.35,
+    "dark_field_angle_rad": 0.55,
+    "guard_bins": 3,
+    "smoothing_sigma_px": 5.0,
+    "seed": 11
+  },
+  "best_candidate": {
+    "amplitudes": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "phases_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "best_design_metrics": {
+    "score": 0.1538588137934192,
+    "mean_visibility": 0.142470873981641,
+    "min_visibility": 0.13365325347191617,
+    "balance_cv": 0.06188919418427045,
+    "contamination_mean": 0.0018207779585307773,
+    "fill_factor": 0.5,
+    "visibility": [
+      0.15128828156580804,
+      0.15128828156580804,
+      0.13365367932303168,
+      0.13365325347191617
+    ],
+    "phase_noise_factor": 2.8033469350854454e-05,
+    "dark_field_noise_factor": 7.045966461065078
+  },
+  "best_reconstruction_metrics": {
+    "score": 0.10475309710805289,
+    "phase_rmse_rad": 0.002570765829833061,
+    "transmission_rmse": 0.00030501059696094745,
+    "dark_field_mean_rmse": 0.0010943320644884473,
+    "dark_field_anisotropy_rmse": 0.09920830705080676,
+    "dark_field_angle_mae_deg": 4.616020320583559,
+    "mean_visibility": 0.142470873981641,
+    "min_visibility": 0.13365325347191617
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "candidate": {
+        "amplitudes": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "phases_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "design_metrics": {
+        "score": 0.1538588137934192,
+        "mean_visibility": 0.142470873981641,
+        "min_visibility": 0.13365325347191617,
+        "balance_cv": 0.06188919418427045,
+        "contamination_mean": 0.0018207779585307773,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.15128828156580804,
+          0.15128828156580804,
+          0.13365367932303168,
+          0.13365325347191617
+        ],
+        "phase_noise_factor": 2.8033469350854454e-05,
+        "dark_field_noise_factor": 7.045966461065078
+      },
+      "reconstruction_metrics": {
+        "score": 0.10475309710805289,
+        "phase_rmse_rad": 0.002570765829833061,
+        "transmission_rmse": 0.00030501059696094745,
+        "dark_field_mean_rmse": 0.0010943320644884473,
+        "dark_field_anisotropy_rmse": 0.09920830705080676,
+        "dark_field_angle_mae_deg": 4.616020320583559,
+        "mean_visibility": 0.142470873981641,
+        "min_visibility": 0.13365325347191617
+      }
+    },
+    {
+      "iteration": 1,
+      "candidate": {
+        "amplitudes": [
+          0.9363030365834086,
+          1.3406954758533631,
+          0.8190959903186257,
+          0.6480388832980213
+        ],
+        "phases_rad": [
+          -1.190390559076112,
+          1.370898406505023,
+          1.7653588151890123,
+          0.24315824144555664
+        ]
+      },
+      "design_metrics": {
+        "score": -0.15086230804548062,
+        "mean_visibility": 0.12240435150427977,
+        "min_visibility": 0.022511056955390702,
+        "balance_cv": 0.7541332290957025,
+        "contamination_mean": 0.07473896802556118,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.022511056955390702,
+          0.2670594239278363,
+          0.13302631650064994,
+          0.06702060863324209
+        ],
+        "phase_noise_factor": 7.037967823047823e-05,
+        "dark_field_noise_factor": 17.651298107058246
+      },
+      "reconstruction_metrics": {
+        "score": 0.049541044162792855,
+        "phase_rmse_rad": 0.0030133622730903614,
+        "transmission_rmse": 0.0002992120122651048,
+        "dark_field_mean_rmse": 0.0015576924727466036,
+        "dark_field_anisotropy_rmse": 0.11957627536453416,
+        "dark_field_angle_mae_deg": 7.075462750588236,
+        "mean_visibility": 0.12240435150427977,
+        "min_visibility": 0.022511056955390702
+      }
+    },
+    {
+      "iteration": 2,
+      "candidate": {
+        "amplitudes": [
+          0.8493323342590564,
+          1.3330797835113197,
+          1.342460409215726,
+          0.9492167805649288
+        ],
+        "phases_rad": [
+          -0.5674181136327547,
+          0.7115407390301423,
+          1.3421704739884612,
+          0.754722688675967
+        ]
+      },
+      "design_metrics": {
+        "score": -0.007857285330659873,
+        "mean_visibility": 0.16340049689547206,
+        "min_visibility": 0.07387562604753554,
+        "balance_cv": 0.5362140515592722,
+        "contamination_mean": 0.010258853461352878,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.07387562604753554,
+          0.25275780020709593,
+          0.2492396329487159,
+          0.07772892837854081
+        ],
+        "phase_noise_factor": 3.4200420289432805e-05,
+        "dark_field_noise_factor": 8.592511741669066
+      },
+      "reconstruction_metrics": {
+        "score": 0.07450328889580957,
+        "phase_rmse_rad": 0.002311512835280618,
+        "transmission_rmse": 0.00029600221694103525,
+        "dark_field_mean_rmse": 0.0013023567073460682,
+        "dark_field_anisotropy_rmse": 0.09266647603725696,
+        "dark_field_angle_mae_deg": 6.005545995114396,
+        "mean_visibility": 0.16340049689547206,
+        "min_visibility": 0.07387562604753554
+      }
+    },
+    {
+      "iteration": 3,
+      "candidate": {
+        "amplitudes": [
+          0.946369655772909,
+          0.9535184699561736,
+          1.116796090752705,
+          1.3342910310938598
+        ],
+        "phases_rad": [
+          -2.8402710540263483,
+          -2.578344809528986,
+          1.6433238151211054,
+          -0.2532289965808614
+        ]
+      },
+      "design_metrics": {
+        "score": 0.036612318192009025,
+        "mean_visibility": 0.12381585008177343,
+        "min_visibility": 0.090027457609842,
+        "balance_cv": 0.30942308392351586,
+        "contamination_mean": 0.007061584594971744,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.10662158397196975,
+          0.10972078856970115,
+          0.090027457609842,
+          0.1888935701755808
+        ],
+        "phase_noise_factor": 3.4729870441582e-05,
+        "dark_field_noise_factor": 8.72367897986379
+      },
+      "reconstruction_metrics": {
+        "score": 0.07389865042455143,
+        "phase_rmse_rad": 0.002803613958633878,
+        "transmission_rmse": 0.0003127435182278851,
+        "dark_field_mean_rmse": 0.0014594695866673526,
+        "dark_field_anisotropy_rmse": 0.127862252345434,
+        "dark_field_angle_mae_deg": 7.042847193127381,
+        "mean_visibility": 0.12381585008177343,
+        "min_visibility": 0.090027457609842
+      }
+    },
+    {
+      "iteration": 4,
+      "candidate": {
+        "amplitudes": [
+          1.2217225904717641,
+          1.0315144258552582,
+          0.96948961178846,
+          1.3633398169707887
+        ],
+        "phases_rad": [
+          -0.8270081737112953,
+          0.9237196708567312,
+          0.2731668175121844,
+          -2.4440914502525266
+        ]
+      },
+      "design_metrics": {
+        "score": 0.020299094328324052,
+        "mean_visibility": 0.1535379921544712,
+        "min_visibility": 0.07830172053310887,
+        "balance_cv": 0.4280933291064239,
+        "contamination_mean": 0.014908313860880065,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.18591734864431353,
+          0.10549086623850397,
+          0.07830172053310887,
+          0.24444203320195843
+        ],
+        "phase_noise_factor": 3.155081652282966e-05,
+        "dark_field_noise_factor": 7.93007219319559
+      },
+      "reconstruction_metrics": {
+        "score": 0.07774449975385328,
+        "phase_rmse_rad": 0.0024784375881985454,
+        "transmission_rmse": 0.0003071113468382281,
+        "dark_field_mean_rmse": 0.0014840400231507776,
+        "dark_field_anisotropy_rmse": 0.08821490264252066,
+        "dark_field_angle_mae_deg": 5.466611389815868,
+        "mean_visibility": 0.1535379921544712,
+        "min_visibility": 0.07830172053310887
+      }
+    },
+    {
+      "iteration": 5,
+      "candidate": {
+        "amplitudes": [
+          0.7340810856795601,
+          1.253751590399989,
+          1.0181609546366697,
+          1.1431159571072236
+        ],
+        "phases_rad": [
+          -0.28942628581484664,
+          2.1978406494312344,
+          2.211782325810807,
+          -0.4365559916550579
+        ]
+      },
+      "design_metrics": {
+        "score": 0.0328808317367001,
+        "mean_visibility": 0.1660579723951629,
+        "min_visibility": 0.0717291159155372,
+        "balance_cv": 0.4244928393059428,
+        "contamination_mean": 0.01268462940133573,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.0717291159155372,
+          0.26284307523538675,
+          0.13648120299138441,
+          0.19317849543834317
+        ],
+        "phase_noise_factor": 3.0123800201773058e-05,
+        "dark_field_noise_factor": 7.562366867736702
+      },
+      "reconstruction_metrics": {
+        "score": 0.07843122405960676,
+        "phase_rmse_rad": 0.0025253632049882548,
+        "transmission_rmse": 0.00029329427231647806,
+        "dark_field_mean_rmse": 0.0011773852540984651,
+        "dark_field_anisotropy_rmse": 0.09491774918521889,
+        "dark_field_angle_mae_deg": 4.980836548549353,
+        "mean_visibility": 0.1660579723951629,
+        "min_visibility": 0.0717291159155372
+      }
+    },
+    {
+      "iteration": 6,
+      "candidate": {
+        "amplitudes": [
+          0.7033274289991902,
+          1.2647224898956977,
+          0.9992249004128441,
+          1.0453242471301516
+        ],
+        "phases_rad": [
+          0.05197424131943995,
+          -2.9099400006772185,
+          0.08052739047066915,
+          -2.5390508161949863
+        ]
+      },
+      "design_metrics": {
+        "score": 0.011809956002302835,
+        "mean_visibility": 0.1699933369045592,
+        "min_visibility": 0.06284460972809672,
+        "balance_cv": 0.4819808140773465,
+        "contamination_mean": 0.02600624203604642,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.06284460972809672,
+          0.29289517319556646,
+          0.1536722573649105,
+          0.17056130732966318
+        ],
+        "phase_noise_factor": 3.15724760673973e-05,
+        "dark_field_noise_factor": 7.924201086871708
+      },
+      "reconstruction_metrics": {
+        "score": 0.07449265358664141,
+        "phase_rmse_rad": 0.0024639486720736143,
+        "transmission_rmse": 0.0003064791903605288,
+        "dark_field_mean_rmse": 0.0011093291090579947,
+        "dark_field_anisotropy_rmse": 0.08235846089390188,
+        "dark_field_angle_mae_deg": 5.1827974818903115,
+        "mean_visibility": 0.1699933369045592,
+        "min_visibility": 0.06284460972809672
+      }
+    },
+    {
+      "iteration": 7,
+      "candidate": {
+        "amplitudes": [
+          0.6502008657762193,
+          1.2619617748585998,
+          0.7139341735416023,
+          1.1772107162451904
+        ],
+        "phases_rad": [
+          -0.3812419563679712,
+          0.01705825894817181,
+          0.051463438876900636,
+          -2.09096079454618
+        ]
+      },
+      "design_metrics": {
+        "score": -0.04481213147628557,
+        "mean_visibility": 0.18166828162949905,
+        "min_visibility": 0.05150031552518593,
+        "balance_cv": 0.6703372319174317,
+        "contamination_mean": 0.02368730407990028,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.05150031552518593,
+          0.32660474730504063,
+          0.07117928100573677,
+          0.27738878268203293
+        ],
+        "phase_noise_factor": 3.995580966206909e-05,
+        "dark_field_noise_factor": 10.033310527495457
+      },
+      "reconstruction_metrics": {
+        "score": 0.07251225385928338,
+        "phase_rmse_rad": 0.001668653227122998,
+        "transmission_rmse": 0.0002957461791177837,
+        "dark_field_mean_rmse": 0.0010543633818632095,
+        "dark_field_anisotropy_rmse": 0.09277160278651789,
+        "dark_field_angle_mae_deg": 4.672996944625425,
+        "mean_visibility": 0.18166828162949905,
+        "min_visibility": 0.05150031552518593
+      }
+    },
+    {
+      "iteration": 8,
+      "candidate": {
+        "amplitudes": [
+          0.6510462594330864,
+          1.1103210054414818,
+          0.6822130118513392,
+          0.6520285908233927
+        ],
+        "phases_rad": [
+          -2.8564337354314957,
+          0.6500188104268725,
+          2.7996810099766645,
+          0.25542761232242306
+        ]
+      },
+      "design_metrics": {
+        "score": -0.10339772946562008,
+        "mean_visibility": 0.15458529861221634,
+        "min_visibility": 0.027345933326320404,
+        "balance_cv": 0.7390737585286742,
+        "contamination_mean": 0.03071847962190296,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.027345933326320404,
+          0.3397362282902925,
+          0.13131262893459006,
+          0.11994640389766242
+        ],
+        "phase_noise_factor": 5.5304108967386334e-05,
+        "dark_field_noise_factor": 13.866109843815307
+      },
+      "reconstruction_metrics": {
+        "score": 0.06054327016077387,
+        "phase_rmse_rad": 0.0026609250766006435,
+        "transmission_rmse": 0.000299221226686052,
+        "dark_field_mean_rmse": 0.001196386741475609,
+        "dark_field_anisotropy_rmse": 0.07972474305194935,
+        "dark_field_angle_mae_deg": 5.12543312378257,
+        "mean_visibility": 0.15458529861221634,
+        "min_visibility": 0.027345933326320404
+      }
+    },
+    {
+      "iteration": 9,
+      "candidate": {
+        "amplitudes": [
+          0.6123419759717754,
+          1.0643845900570907,
+          0.9824521845783905,
+          1.1500650104468368
+        ],
+        "phases_rad": [
+          -2.400366877618738,
+          1.0931509656627592,
+          2.7136428483627633,
+          -1.771574244186953
+        ]
+      },
+      "design_metrics": {
+        "score": -0.02960855135888691,
+        "mean_visibility": 0.14250862563786537,
+        "min_visibility": 0.04571352650947837,
+        "balance_cv": 0.5146832347987066,
+        "contamination_mean": 0.01703213222287284,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.04571352650947837,
+          0.22478042749302946,
+          0.09841071403653953,
+          0.20112983451241415
+        ],
+        "phase_noise_factor": 4.130545882377725e-05,
+        "dark_field_noise_factor": 10.364389309262041
+      },
+      "reconstruction_metrics": {
+        "score": 0.059487087925400986,
+        "phase_rmse_rad": 0.003117684283848644,
+        "transmission_rmse": 0.00029952158700383694,
+        "dark_field_mean_rmse": 0.001278959011139926,
+        "dark_field_anisotropy_rmse": 0.11061610960583254,
+        "dark_field_angle_mae_deg": 7.576368739140766,
+        "mean_visibility": 0.14250862563786537,
+        "min_visibility": 0.04571352650947837
+      }
+    },
+    {
+      "iteration": 10,
+      "candidate": {
+        "amplitudes": [
+          1.360557432824115,
+          1.0832786019033622,
+          1.2752800998729141,
+          0.7662858156138581
+        ],
+        "phases_rad": [
+          -0.7062116550787665,
+          2.3396678003367732,
+          2.0846173742535914,
+          0.5561665146743553
+        ]
+      },
+      "design_metrics": {
+        "score": -0.02898636205975794,
+        "mean_visibility": 0.14950501918175188,
+        "min_visibility": 0.04821008463271429,
+        "balance_cv": 0.5402742250743191,
+        "contamination_mean": 0.007239618118383567,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.22200936264356402,
+          0.09260664316132797,
+          0.23519398628940122,
+          0.04821008463271429
+        ],
+        "phase_noise_factor": 4.004582748611545e-05,
+        "dark_field_noise_factor": 10.074258358663915
+      },
+      "reconstruction_metrics": {
+        "score": 0.06627003272565832,
+        "phase_rmse_rad": 0.0025559100373349713,
+        "transmission_rmse": 0.0002815153888267433,
+        "dark_field_mean_rmse": 0.0013769554774360955,
+        "dark_field_anisotropy_rmse": 0.10157836780345182,
+        "dark_field_angle_mae_deg": 5.896886947417908,
+        "mean_visibility": 0.14950501918175188,
+        "min_visibility": 0.04821008463271429
+      }
+    },
+    {
+      "iteration": 11,
+      "candidate": {
+        "amplitudes": [
+          1.1910995776831352,
+          1.055660270452881,
+          0.957247444288966,
+          0.8459235950490267
+        ],
+        "phases_rad": [
+          -0.013090058343017574,
+          0.10881980870619445,
+          -0.10918413917722614,
+          -3.075699021296383
+        ]
+      },
+      "design_metrics": {
+        "score": 0.05190450271195258,
+        "mean_visibility": 0.12595056591479065,
+        "min_visibility": 0.08686664158752726,
+        "balance_cv": 0.26757888414977177,
+        "contamination_mean": 0.01055057073649879,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.17713802469980364,
+          0.10720500718801004,
+          0.13259259018382166,
+          0.08686664158752726
+        ],
+        "phase_noise_factor": 3.383553601109398e-05,
+        "dark_field_noise_factor": 8.506759083493153
+      },
+      "reconstruction_metrics": {
+        "score": 0.07182678494950714,
+        "phase_rmse_rad": 0.0029050502288329046,
+        "transmission_rmse": 0.00029580351261060243,
+        "dark_field_mean_rmse": 0.001730579137139979,
+        "dark_field_anisotropy_rmse": 0.11445716553429927,
+        "dark_field_angle_mae_deg": 7.527623606746537,
+        "mean_visibility": 0.12595056591479065,
+        "min_visibility": 0.08686664158752726
+      }
+    },
+    {
+      "iteration": 12,
+      "candidate": {
+        "amplitudes": [
+          1.3840417525641562,
+          1.3922542110042717,
+          1.1695744897269775,
+          0.74690778735007
+        ],
+        "phases_rad": [
+          2.3532767413307623,
+          -1.5677374173827139,
+          -2.9040504769002395,
+          -1.9825969609321692
+        ]
+      },
+      "design_metrics": {
+        "score": -0.00027491263861703207,
+        "mean_visibility": 0.11848390801823626,
+        "min_visibility": 0.05275541624239626,
+        "balance_cv": 0.35971267520386235,
+        "contamination_mean": 0.03024119198050274,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.1267772614717877,
+          0.12242748421464145,
+          0.17197547014411962,
+          0.05275541624239626
+        ],
+        "phase_noise_factor": 4.057717993537258e-05,
+        "dark_field_noise_factor": 10.206533202757907
+      },
+      "reconstruction_metrics": {
+        "score": 0.05572787860953843,
+        "phase_rmse_rad": 0.004204116237923291,
+        "transmission_rmse": 0.0003143367665442296,
+        "dark_field_mean_rmse": 0.0018961299163747704,
+        "dark_field_anisotropy_rmse": 0.12535860454017694,
+        "dark_field_angle_mae_deg": 7.233362475297664,
+        "mean_visibility": 0.11848390801823626,
+        "min_visibility": 0.05275541624239626
+      }
+    },
+    {
+      "iteration": 13,
+      "candidate": {
+        "amplitudes": [
+          1.2311529513955186,
+          1.2960202250906736,
+          1.3705214093046791,
+          1.2436719510372172
+        ],
+        "phases_rad": [
+          -1.2178734208386321,
+          0.3372741251345248,
+          1.2580984780802167,
+          -2.7927059179750264
+        ]
+      },
+      "design_metrics": {
+        "score": 0.12174832055270594,
+        "mean_visibility": 0.14235598837426197,
+        "min_visibility": 0.12062113369964984,
+        "balance_cv": 0.13955051339513597,
+        "contamination_mean": 0.009601357790854591,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.12749075341955698,
+          0.15027706919647357,
+          0.17103499718136744,
+          0.12062113369964984
+        ],
+        "phase_noise_factor": 2.8493173262063788e-05,
+        "dark_field_noise_factor": 7.1588147642263795
+      },
+      "reconstruction_metrics": {
+        "score": 0.08992983892109964,
+        "phase_rmse_rad": 0.0023287844689439566,
+        "transmission_rmse": 0.00031053764464944006,
+        "dark_field_mean_rmse": 0.0016147315440614202,
+        "dark_field_anisotropy_rmse": 0.10732176424396567,
+        "dark_field_angle_mae_deg": 5.938123157092573,
+        "mean_visibility": 0.14235598837426197,
+        "min_visibility": 0.12062113369964984
+      }
+    },
+    {
+      "iteration": 14,
+      "candidate": {
+        "amplitudes": [
+          0.6684432446386737,
+          1.171218584689457,
+          0.8734652222175331,
+          0.6741628320313906
+        ],
+        "phases_rad": [
+          0.013291676841613143,
+          -2.567071944926926,
+          1.0807560457541205,
+          -2.612371948273699
+        ]
+      },
+      "design_metrics": {
+        "score": -0.08238841157402381,
+        "mean_visibility": 0.16348277073012035,
+        "min_visibility": 0.03453206657779951,
+        "balance_cv": 0.7075927030116393,
+        "contamination_mean": 0.034233764472601444,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.03453206657779951,
+          0.3403532552323115,
+          0.18678342783054516,
+          0.09226233327982526
+        ],
+        "phase_noise_factor": 4.7926426027745317e-05,
+        "dark_field_noise_factor": 12.0222920957253
+      },
+      "reconstruction_metrics": {
+        "score": 0.06312576763219467,
+        "phase_rmse_rad": 0.002127848229827708,
+        "transmission_rmse": 0.00029817726287566606,
+        "dark_field_mean_rmse": 0.0011465857037031772,
+        "dark_field_anisotropy_rmse": 0.0848217208233563,
+        "dark_field_angle_mae_deg": 5.5678062670666835,
+        "mean_visibility": 0.16348277073012035,
+        "min_visibility": 0.03453206657779951
+      }
+    },
+    {
+      "iteration": 15,
+      "candidate": {
+        "amplitudes": [
+          1.380412973329951,
+          1.2581480386147823,
+          0.7628232230204026,
+          0.722695636633889
+        ],
+        "phases_rad": [
+          1.3228438988350506,
+          -1.6662408115830922,
+          2.3078724138695756,
+          1.5874744674290913
+        ]
+      },
+      "design_metrics": {
+        "score": -0.018536076688119865,
+        "mean_visibility": 0.08153164505839505,
+        "min_visibility": 0.061557076666939395,
+        "balance_cv": 0.32184810763140254,
+        "contamination_mean": 0.01405076621129445,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.12631965553829835,
+          0.061557076666939395,
+          0.07368106330069432,
+          0.06456878472764814
+        ],
+        "phase_noise_factor": 5.2928816989617355e-05,
+        "dark_field_noise_factor": 13.305219588100154
+      },
+      "reconstruction_metrics": {
+        "score": 0.04482401511296102,
+        "phase_rmse_rad": 0.0050743907505932185,
+        "transmission_rmse": 0.0003070567615816611,
+        "dark_field_mean_rmse": 0.0027395451823534083,
+        "dark_field_anisotropy_rmse": 0.22865771070756719,
+        "dark_field_angle_mae_deg": 10.249537427724608,
+        "mean_visibility": 0.08153164505839505,
+        "min_visibility": 0.061557076666939395
+      }
+    },
+    {
+      "iteration": 16,
+      "candidate": {
+        "amplitudes": [
+          1.2426650294625248,
+          0.9061560814552825,
+          1.2481514263772508,
+          1.3364056766985488
+        ],
+        "phases_rad": [
+          2.350622469934554,
+          -1.342375241127177,
+          -1.917399291099978,
+          -2.5158376994219314
+        ]
+      },
+      "design_metrics": {
+        "score": 0.05366167133345247,
+        "mean_visibility": 0.13825161567216426,
+        "min_visibility": 0.08019577637914026,
+        "balance_cv": 0.2952253351656207,
+        "contamination_mean": 0.006550105627648031,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.1885481883127158,
+          0.08019577637914026,
+          0.12298376830009373,
+          0.16127872969670728
+        ],
+        "phase_noise_factor": 3.196072872217052e-05,
+        "dark_field_noise_factor": 8.026192139682452
+      },
+      "reconstruction_metrics": {
+        "score": 0.07860676416712328,
+        "phase_rmse_rad": 0.0027872708009708614,
+        "transmission_rmse": 0.00028931188756748587,
+        "dark_field_mean_rmse": 0.0013118524961357456,
+        "dark_field_anisotropy_rmse": 0.11241299441829758,
+        "dark_field_angle_mae_deg": 5.565483621012871,
+        "mean_visibility": 0.13825161567216426,
+        "min_visibility": 0.08019577637914026
+      }
+    },
+    {
+      "iteration": 17,
+      "candidate": {
+        "amplitudes": [
+          0.7752735313720076,
+          1.0858873128256654,
+          0.8469824488881855,
+          0.9801404538208769
+        ],
+        "phases_rad": [
+          2.4944625149726622,
+          0.5376490418300692,
+          -0.46109156408877583,
+          -2.5454749542928807
+        ]
+      },
+      "design_metrics": {
+        "score": 0.038182642424178154,
+        "mean_visibility": 0.15264730109621646,
+        "min_visibility": 0.08583103872308845,
+        "balance_cv": 0.3849037287196043,
+        "contamination_mean": 0.00603056650474455,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.08583103872308845,
+          0.23449886355501803,
+          0.10955402043991912,
+          0.18070528166684027
+        ],
+        "phase_noise_factor": 3.0429640994310764e-05,
+        "dark_field_noise_factor": 7.64424985068198
+      },
+      "reconstruction_metrics": {
+        "score": 0.07802475582577496,
+        "phase_rmse_rad": 0.0023516380622732743,
+        "transmission_rmse": 0.00029911560888858677,
+        "dark_field_mean_rmse": 0.0011760466370606501,
+        "dark_field_anisotropy_rmse": 0.07349557871222691,
+        "dark_field_angle_mae_deg": 8.30211783070725,
+        "mean_visibility": 0.15264730109621646,
+        "min_visibility": 0.08583103872308845
+      }
+    },
+    {
+      "iteration": 18,
+      "candidate": {
+        "amplitudes": [
+          1.1140045798945173,
+          0.941118129491247,
+          0.716497222218123,
+          1.086378388081834
+        ],
+        "phases_rad": [
+          0.6635387544781839,
+          2.733308551125468,
+          -2.9965311692584424,
+          -2.285329271564449
+        ]
+      },
+      "design_metrics": {
+        "score": 0.022489202934044786,
+        "mean_visibility": 0.15016969951755205,
+        "min_visibility": 0.07134571375810997,
+        "balance_cv": 0.40962512721486627,
+        "contamination_mean": 0.010740652489157836,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.2000791385093145,
+          0.10979387503611762,
+          0.07134571375810997,
+          0.21946007076666607
+        ],
+        "phase_noise_factor": 3.2492228016607636e-05,
+        "dark_field_noise_factor": 8.16972375769722
+      },
+      "reconstruction_metrics": {
+        "score": 0.08035534939822951,
+        "phase_rmse_rad": 0.0022517676712246397,
+        "transmission_rmse": 0.00031502716270311726,
+        "dark_field_mean_rmse": 0.0011403029291710747,
+        "dark_field_anisotropy_rmse": 0.08988546128035355,
+        "dark_field_angle_mae_deg": 5.307774667551605,
+        "mean_visibility": 0.15016969951755205,
+        "min_visibility": 0.07134571375810997
+      }
+    },
+    {
+      "iteration": 19,
+      "candidate": {
+        "amplitudes": [
+          0.8625034455474312,
+          0.7307242353339419,
+          0.6682676969618295,
+          0.6652198537841477
+        ],
+        "phases_rad": [
+          0.45647044895857825,
+          0.010041672458894091,
+          -2.455843300464234,
+          -1.896294830260616
+        ]
+      },
+      "design_metrics": {
+        "score": 0.03822139361282807,
+        "mean_visibility": 0.1319736736287215,
+        "min_visibility": 0.09313428883409536,
+        "balance_cv": 0.32391965614811047,
+        "contamination_mean": 0.018319862862893055,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.20432733763527772,
+          0.09313428883409536,
+          0.11368216914181252,
+          0.11675089890370043
+        ],
+        "phase_noise_factor": 3.2818496693672394e-05,
+        "dark_field_noise_factor": 8.248247639369284
+      },
+      "reconstruction_metrics": {
+        "score": 0.08257159472752304,
+        "phase_rmse_rad": 0.0023410490606076808,
+        "transmission_rmse": 0.0002978286365347087,
+        "dark_field_mean_rmse": 0.0012620253387150904,
+        "dark_field_anisotropy_rmse": 0.0963439200221142,
+        "dark_field_angle_mae_deg": 6.55511879427571,
+        "mean_visibility": 0.1319736736287215,
+        "min_visibility": 0.09313428883409536
+      }
+    },
+    {
+      "iteration": 20,
+      "candidate": {
+        "amplitudes": [
+          0.7507575567690713,
+          0.9958086357815283,
+          1.0066881513263632,
+          1.1446823258518164
+        ],
+        "phases_rad": [
+          1.128861231790217,
+          2.5134845719291308,
+          -0.6703137622472406,
+          -2.24176897724452
+        ]
+      },
+      "design_metrics": {
+        "score": 0.0330427881757505,
+        "mean_visibility": 0.13570683959850027,
+        "min_visibility": 0.07767734449649231,
+        "balance_cv": 0.33858401811224353,
+        "contamination_mean": 0.017894906037938117,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.07767734449649231,
+          0.1783800621449445,
+          0.10377056916362959,
+          0.18299938258893467
+        ],
+        "phase_noise_factor": 3.342914311068815e-05,
+        "dark_field_noise_factor": 8.395229311021826
+      },
+      "reconstruction_metrics": {
+        "score": 0.0675174174990278,
+        "phase_rmse_rad": 0.002516863297277455,
+        "transmission_rmse": 0.00030140819148716784,
+        "dark_field_mean_rmse": 0.0017488428751951347,
+        "dark_field_anisotropy_rmse": 0.11735597682929146,
+        "dark_field_angle_mae_deg": 8.136784322684647,
+        "mean_visibility": 0.13570683959850027,
+        "min_visibility": 0.07767734449649231
+      }
+    },
+    {
+      "iteration": 21,
+      "candidate": {
+        "amplitudes": [
+          1.1298300111999835,
+          1.3908792659863782,
+          0.8068242608098861,
+          1.100663948312107
+        ],
+        "phases_rad": [
+          -1.2797806482854848,
+          -0.9659781714884028,
+          -0.5714824315115918,
+          -2.108413275532821
+        ]
+      },
+      "design_metrics": {
+        "score": -0.023235992839876606,
+        "mean_visibility": 0.1274588582011253,
+        "min_visibility": 0.06383299723261118,
+        "balance_cv": 0.46650332471365213,
+        "contamination_mean": 0.016884683496882266,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.07883317251911802,
+          0.21031518578599856,
+          0.06383299723261118,
+          0.15685407726677333
+        ],
+        "phase_noise_factor": 3.925948929093138e-05,
+        "dark_field_noise_factor": 9.870253705993399
+      },
+      "reconstruction_metrics": {
+        "score": 0.0682092849083699,
+        "phase_rmse_rad": 0.002898065713715567,
+        "transmission_rmse": 0.0002819804714118268,
+        "dark_field_mean_rmse": 0.001520938496005509,
+        "dark_field_anisotropy_rmse": 0.11289331458612542,
+        "dark_field_angle_mae_deg": 5.379705135589015,
+        "mean_visibility": 0.1274588582011253,
+        "min_visibility": 0.06383299723261118
+      }
+    },
+    {
+      "iteration": 22,
+      "candidate": {
+        "amplitudes": [
+          0.8231406052100179,
+          1.0926585611668063,
+          1.2001596335871867,
+          1.1464875593077495
+        ],
+        "phases_rad": [
+          2.5977029047992266,
+          0.0726181702732136,
+          1.2514250988063305,
+          -1.6101783800951806
+        ]
+      },
+      "design_metrics": {
+        "score": 0.03932269466292024,
+        "mean_visibility": 0.13510029348220615,
+        "min_visibility": 0.07211804223732178,
+        "balance_cv": 0.3184602763558497,
+        "contamination_mean": 0.011730063270344811,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.07211804223732178,
+          0.18837729749334933,
+          0.1565659495902269,
+          0.12333988460792654
+        ],
+        "phase_noise_factor": 3.352373353599265e-05,
+        "dark_field_noise_factor": 8.417353308994645
+      },
+      "reconstruction_metrics": {
+        "score": 0.07338680948208881,
+        "phase_rmse_rad": 0.0024044664846377996,
+        "transmission_rmse": 0.0003055345137075193,
+        "dark_field_mean_rmse": 0.0013958326926210018,
+        "dark_field_anisotropy_rmse": 0.10096376541991321,
+        "dark_field_angle_mae_deg": 7.197555424187616,
+        "mean_visibility": 0.13510029348220615,
+        "min_visibility": 0.07211804223732178
+      }
+    },
+    {
+      "iteration": 23,
+      "candidate": {
+        "amplitudes": [
+          0.6301147485075169,
+          1.0944003858668214,
+          0.6162886974429265,
+          0.7032982336308935
+        ],
+        "phases_rad": [
+          -2.372549141690909,
+          -0.6426785409167364,
+          -2.1537838929628457,
+          2.8358326319499083
+        ]
+      },
+      "design_metrics": {
+        "score": -0.11764072384408383,
+        "mean_visibility": 0.1564300377880412,
+        "min_visibility": 0.02543823425873452,
+        "balance_cv": 0.7474972946194894,
+        "contamination_mean": 0.0940313353999368,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.02543823425873452,
+          0.3438533349997382,
+          0.10805416347670002,
+          0.14837441841699212
+        ],
+        "phase_noise_factor": 5.805269442956715e-05,
+        "dark_field_noise_factor": 14.553361371642815
+      },
+      "reconstruction_metrics": {
+        "score": 0.05377105427152097,
+        "phase_rmse_rad": 0.0027026024095263843,
+        "transmission_rmse": 0.0003087756948388712,
+        "dark_field_mean_rmse": 0.0014574630560927801,
+        "dark_field_anisotropy_rmse": 0.09315254371481352,
+        "dark_field_angle_mae_deg": 5.333540457735433,
+        "mean_visibility": 0.1564300377880412,
+        "min_visibility": 0.02543823425873452
+      }
+    },
+    {
+      "iteration": 24,
+      "candidate": {
+        "amplitudes": [
+          1.054733987524127,
+          1.0780959866689184,
+          1.3282023185797387,
+          1.2143902518795544
+        ],
+        "phases_rad": [
+          2.988314099198285,
+          -0.10815420085378413,
+          2.339638380558725,
+          2.946796514601072
+        ]
+      },
+      "design_metrics": {
+        "score": 0.10279186486857284,
+        "mean_visibility": 0.13124706907684255,
+        "min_visibility": 0.11498792277154486,
+        "balance_cv": 0.15819527120043797,
+        "contamination_mean": 0.009169199905013307,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.11498792277154486,
+          0.12211469029713304,
+          0.16690179709990619,
+          0.1209838661387861
+        ],
+        "phase_noise_factor": 3.099940937522731e-05,
+        "dark_field_noise_factor": 7.78567514281791
+      },
+      "reconstruction_metrics": {
+        "score": 0.07383188444113703,
+        "phase_rmse_rad": 0.0033739052596545144,
+        "transmission_rmse": 0.0002932273150222195,
+        "dark_field_mean_rmse": 0.001712559992312825,
+        "dark_field_anisotropy_rmse": 0.11417655830855544,
+        "dark_field_angle_mae_deg": 8.129790066488813,
+        "mean_visibility": 0.13124706907684255,
+        "min_visibility": 0.11498792277154486
+      }
+    },
+    {
+      "iteration": 25,
+      "candidate": {
+        "amplitudes": [
+          1.097317870040325,
+          1.366261708971778,
+          1.2236079849230794,
+          0.7099619612382593
+        ],
+        "phases_rad": [
+          2.0304029283008935,
+          2.6999674658886352,
+          1.439614060092592,
+          -1.243020015884823
+        ]
+      },
+      "design_metrics": {
+        "score": -0.03920882679180884,
+        "mean_visibility": 0.14421312304144984,
+        "min_visibility": 0.043047744638769425,
+        "balance_cv": 0.5485441579040835,
+        "contamination_mean": 0.01096715363260906,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.09090185157588757,
+          0.21800216594154426,
+          0.22490073000959815,
+          0.043047744638769425
+        ],
+        "phase_noise_factor": 4.2986251233697743e-05,
+        "dark_field_noise_factor": 10.8161033344754
+      },
+      "reconstruction_metrics": {
+        "score": 0.06418746654221748,
+        "phase_rmse_rad": 0.002546266337330868,
+        "transmission_rmse": 0.00029048713074316757,
+        "dark_field_mean_rmse": 0.0015787389282930903,
+        "dark_field_anisotropy_rmse": 0.10848171782992623,
+        "dark_field_angle_mae_deg": 5.4662124939389924,
+        "mean_visibility": 0.14421312304144984,
+        "min_visibility": 0.043047744638769425
+      }
+    },
+    {
+      "iteration": 26,
+      "candidate": {
+        "amplitudes": [
+          0.8940530179509145,
+          1.0031635222162034,
+          0.8264503247610964,
+          0.814933965458627
+        ],
+        "phases_rad": [
+          2.5534823880775743,
+          1.2011204818503645,
+          -3.074048946529296,
+          -0.8775901621669258
+        ]
+      },
+      "design_metrics": {
+        "score": 0.08601535697600371,
+        "mean_visibility": 0.13414165218952356,
+        "min_visibility": 0.11250531506411379,
+        "balance_cv": 0.21099861802719727,
+        "contamination_mean": 0.01201553835014628,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.12025525822846442,
+          0.18282633606363222,
+          0.12097969940188387,
+          0.11250531506411379
+        ],
+        "phase_noise_factor": 3.076722516132665e-05,
+        "dark_field_noise_factor": 7.734908687172488
+      },
+      "reconstruction_metrics": {
+        "score": 0.0761704431365027,
+        "phase_rmse_rad": 0.0033890882821216908,
+        "transmission_rmse": 0.0003030714445604466,
+        "dark_field_mean_rmse": 0.0013229273101289915,
+        "dark_field_anisotropy_rmse": 0.1059445211347505,
+        "dark_field_angle_mae_deg": 7.8203384311411535,
+        "mean_visibility": 0.13414165218952356,
+        "min_visibility": 0.11250531506411379
+      }
+    },
+    {
+      "iteration": 27,
+      "candidate": {
+        "amplitudes": [
+          0.9921089263734132,
+          1.1795029577973994,
+          0.7785832838693473,
+          1.2265181345112262
+        ],
+        "phases_rad": [
+          -2.367974766596776,
+          0.9852448991696869,
+          -1.7685623763332525,
+          -0.05145448857303281
+        ]
+      },
+      "design_metrics": {
+        "score": -0.00019664751533007624,
+        "mean_visibility": 0.1549368022369682,
+        "min_visibility": 0.058914573406228334,
+        "balance_cv": 0.47640747842796105,
+        "contamination_mean": 0.015597378270345007,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.11208700959651255,
+          0.20098078635986583,
+          0.058914573406228334,
+          0.24776483958526607
+        ],
+        "phase_noise_factor": 3.46958953260309e-05,
+        "dark_field_noise_factor": 8.726763649050568
+      },
+      "reconstruction_metrics": {
+        "score": 0.0728676028184683,
+        "phase_rmse_rad": 0.0020344900468787777,
+        "transmission_rmse": 0.00030562477461690144,
+        "dark_field_mean_rmse": 0.0013761571475489887,
+        "dark_field_anisotropy_rmse": 0.1024712051763389,
+        "dark_field_angle_mae_deg": 5.37195011012681,
+        "mean_visibility": 0.1549368022369682,
+        "min_visibility": 0.058914573406228334
+      }
+    },
+    {
+      "iteration": 28,
+      "candidate": {
+        "amplitudes": [
+          0.7715443592947223,
+          1.174807195511235,
+          0.7278611546720997,
+          0.7597530632104597
+        ],
+        "phases_rad": [
+          -2.8184146335884677,
+          2.4856487109787224,
+          0.5150625500479848,
+          -1.8813975049000078
+        ]
+      },
+      "design_metrics": {
+        "score": -0.06728272587956681,
+        "mean_visibility": 0.1432909008314947,
+        "min_visibility": 0.04880070889229206,
+        "balance_cv": 0.6273164055501801,
+        "contamination_mean": 0.016065309957857613,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.04880070889229206,
+          0.29124483169596316,
+          0.11055947062936977,
+          0.12255859210835386
+        ],
+        "phase_noise_factor": 4.0956399808535636e-05,
+        "dark_field_noise_factor": 10.282327854499675
+      },
+      "reconstruction_metrics": {
+        "score": 0.06548796962573439,
+        "phase_rmse_rad": 0.002194612066200709,
+        "transmission_rmse": 0.00030782123310606516,
+        "dark_field_mean_rmse": 0.0015188062204869912,
+        "dark_field_anisotropy_rmse": 0.12329796257684583,
+        "dark_field_angle_mae_deg": 4.784490118414604,
+        "mean_visibility": 0.1432909008314947,
+        "min_visibility": 0.04880070889229206
+      }
+    },
+    {
+      "iteration": 29,
+      "candidate": {
+        "amplitudes": [
+          1.1905509579549909,
+          0.8601842544776919,
+          0.8434207524761648,
+          1.2772223056498162
+        ],
+        "phases_rad": [
+          1.2111224133006697,
+          -2.9677272094142615,
+          -2.1826744146083823,
+          1.9013546172892966
+        ]
+      },
+      "design_metrics": {
+        "score": -0.012912029707066688,
+        "mean_visibility": 0.1605468013720553,
+        "min_visibility": 0.07092304104667152,
+        "balance_cv": 0.5341123474498628,
+        "contamination_mean": 0.021251348666689387,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.22470393431065824,
+          0.08124903556754301,
+          0.07092304104667152,
+          0.26531119456334834
+        ],
+        "phase_noise_factor": 3.444749570083647e-05,
+        "dark_field_noise_factor": 8.656771921314352
+      },
+      "reconstruction_metrics": {
+        "score": 0.07161837767872753,
+        "phase_rmse_rad": 0.0020984601539699057,
+        "transmission_rmse": 0.0002993651201957652,
+        "dark_field_mean_rmse": 0.000880872809838424,
+        "dark_field_anisotropy_rmse": 0.10263767729029274,
+        "dark_field_angle_mae_deg": 7.2322412576841515,
+        "mean_visibility": 0.1605468013720553,
+        "min_visibility": 0.07092304104667152
+      }
+    },
+    {
+      "iteration": 30,
+      "candidate": {
+        "amplitudes": [
+          1.035951419359424,
+          1.3037215659861265,
+          0.7711950903608958,
+          0.8283741855896781
+        ],
+        "phases_rad": [
+          -3.0514450470624044,
+          -1.4518065500906208,
+          -2.2760307489480596,
+          1.5863913069330229
+        ]
+      },
+      "design_metrics": {
+        "score": -0.05129645458416058,
+        "mean_visibility": 0.11505803727720557,
+        "min_visibility": 0.05944363655419891,
+        "balance_cv": 0.5120848832774308,
+        "contamination_mean": 0.009928459264075432,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.05944363655419891,
+          0.21369622311409597,
+          0.08523816881639147,
+          0.10185412062413593
+        ],
+        "phase_noise_factor": 4.2835408628245904e-05,
+        "dark_field_noise_factor": 10.762998748816557
+      },
+      "reconstruction_metrics": {
+        "score": 0.0571563999142956,
+        "phase_rmse_rad": 0.0039093139313445486,
+        "transmission_rmse": 0.0003035858609497036,
+        "dark_field_mean_rmse": 0.0017870749858534755,
+        "dark_field_anisotropy_rmse": 0.10761190463801924,
+        "dark_field_angle_mae_deg": 8.137827494739458,
+        "mean_visibility": 0.11505803727720557,
+        "min_visibility": 0.05944363655419891
+      }
+    },
+    {
+      "iteration": 31,
+      "candidate": {
+        "amplitudes": [
+          1.1395546363972229,
+          0.6690635461659017,
+          1.3566580275011575,
+          0.965474719106457
+        ],
+        "phases_rad": [
+          2.955833032899517,
+          -1.6857040763335651,
+          3.0794534797865936,
+          0.997357228832561
+        ]
+      },
+      "design_metrics": {
+        "score": -0.07605577715636203,
+        "mean_visibility": 0.1469500945203379,
+        "min_visibility": 0.048627575853167786,
+        "balance_cv": 0.655426269057068,
+        "contamination_mean": 0.02881785735009039,
+        "fill_factor": 0.5,
+        "visibility": [
+          0.2196260581145181,
+          0.048627575853167786,
+          0.26424416655405175,
+          0.055302577559614034
+        ],
+        "phase_noise_factor": 4.676460403005291e-05,
+        "dark_field_noise_factor": 11.74609390581352
+      },
+      "reconstruction_metrics": {
+        "score": 0.0638727887954519,
+        "phase_rmse_rad": 0.0028382082722277443,
+        "transmission_rmse": 0.00031507405888100666,
+        "dark_field_mean_rmse": 0.001522978947898801,
+        "dark_field_anisotropy_rmse": 0.10465164057133922,
+        "dark_field_angle_mae_deg": 4.2402835139849175,
+        "mean_visibility": 0.1469500945203379,
+        "min_visibility": 0.048627575853167786
+      }
+    }
+  ]
+}

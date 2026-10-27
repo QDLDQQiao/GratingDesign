@@ -1,0 +1,84 @@
+{
+  "field_size_um": [
+    32.800000000000004,
+    32.800000000000004
+  ],
+  "raster_resolution_um": 0.1,
+  "xray_energy_keV": 12.0,
+  "polarity": "holes_transmit",
+  "supersample": 1,
+  "orders_per_axis": 5,
+  "period_um": 4.1000000000000005,
+  "focal_length_m": 0.4,
+  "transition_count": 5,
+  "optimization_iterations": 1200,
+  "transition_seed": 23,
+  "transitions_half_period": [
+    0.006944444444444444,
+    0.1219253576566662,
+    0.33549354345764454,
+    0.3574489886076771,
+    0.47932954806251626
+  ],
+  "raster_chunk_rows": 128,
+  "include_binary_fresnel_lens": false,
+  "pattern_class": "DammannGrating",
+  "wavelength_nm": 0.10332000000000001,
+  "array_shape_yx": [
+    20000,
+    20000
+  ],
+  "dammann_design": {
+    "orders_per_axis": 5,
+    "beam_count": 25,
+    "transitions_half_period": [
+      0.006944444444444444,
+      0.1219253576566662,
+      0.33549354345764454,
+      0.3574489886076771,
+      0.47932954806251626
+    ],
+    "order_indices": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "one_dimensional_order_power": [
+      0.11713736642630201,
+      0.11152974112983215,
+      0.1338488994646044,
+      0.11152974112983215,
+      0.11713736642630201
+    ],
+    "one_dimensional_uniformity_min_over_mean": 0.943275766677278,
+    "target_order_energy_fraction_1d": 0.5911831145768728,
+    "target_order_energy_fraction_2d": 0.34949747496081185,
+    "array_uniformity_min_over_mean": 0.8897691720006067,
+    "focal_length_m": 0.4,
+    "first_order_spacing_um_at_focus": 10.08,
+    "order_coordinates_um_at_focus": [
+      -20.16,
+      -10.08,
+      0.0,
+      10.08,
+      20.16
+    ],
+    "phase_levels_rad": [
+      0.0,
+      3.141592653589793
+    ]
+  },
+  "mask_semantics": "0=0 rad phase, 1=pi rad phase; crossed Dammann beam-splitter phase for an external focusing optic",
+  "export_mode": "periodic_gds_aref",
+  "fabrication_field_size_um": [
+    2000.0,
+    2000.0
+  ],
+  "fabrication_raster_resolution_um": 0.1,
+  "period_tile_shape_px": [
+    41,
+    41
+  ]
+}

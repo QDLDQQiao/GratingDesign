@@ -1,0 +1,170 @@
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "name": "1 energy conservation",
+      "measured": 1.1102230246251565e-16,
+      "expected": "<= 1e-10",
+      "tolerance": 1e-10,
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "2 geometry pi grating duty cycle",
+      "measured": 0.5,
+      "expected": 0.5,
+      "tolerance": 1e-12,
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "2a pi grating peak visibility at 80 mm",
+      "measured": {
+        "visibility": 1.2732715031666686,
+        "low_median": 1.945930071048455e-10,
+        "high_median": 2.000000740457454,
+        "mean_error": 4.440892098500626e-16
+      },
+      "expected": {
+        "visibility": 1.2732395447351628,
+        "low_median": "<= 0.05",
+        "high_median": "1.95..2.05",
+        "mean_error": "<= 1e-10"
+      },
+      "tolerance": {
+        "visibility": 0.006
+      },
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "2b pi grating zero contrast at 160 mm",
+      "measured": {
+        "visibility_asm": 1.0021890562176614e-08,
+        "cv_asm": 0.00024235913705130847,
+        "cv_fresnel": 4.616320486561214e-16
+      },
+      "expected": {
+        "visibility_asm": "<= 0.005",
+        "cv_asm": "<= 1e-3",
+        "cv_fresnel": "<= 1e-9"
+      },
+      "tolerance": null,
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "2c pi grating visibility curve",
+      "measured": {
+        "max_abs_error": 3.1958431505829665e-05,
+        "values": [
+          0.48725989550058896,
+          0.9003389657723752,
+          1.1763492677148863,
+          1.2732715031666686,
+          1.1763495411043376,
+          0.9003395098405852,
+          0.4872601573237442,
+          1.0021890562176614e-08,
+          0.9003383372909505,
+          1.2732715026622117
+        ]
+      },
+      "expected": {
+        "values": [
+          0.48724767920221645,
+          0.9003163161571062,
+          1.1763199553648058,
+          1.2732395447351628,
+          1.1763199553648056,
+          0.9003163161571062,
+          0.48724767920221546,
+          4.095050700705169e-16,
+          0.9003163161571067,
+          1.2732395447351628
+        ]
+      },
+      "tolerance": 0.01,
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "3 geometry absorption grating duty cycle",
+      "measured": 0.5,
+      "expected": 0.5,
+      "tolerance": 1e-12,
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "3a absorption grating integer Talbot image",
+      "measured": {
+        "ncc_asm": 0.9999417727182034,
+        "max_diff_fresnel": 8.881784197001252e-16
+      },
+      "expected": {
+        "ncc_asm": ">= 0.999",
+        "max_diff_fresnel": "<= 1e-8"
+      },
+      "tolerance": null,
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "3b absorption grating half-Talbot shift",
+      "measured": 0.999995998397246,
+      "expected": ">= 0.999",
+      "tolerance": null,
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "3c absorption grating visibility curve",
+      "measured": {
+        "max_abs_error": 8.230648834373078e-06,
+        "values": [
+          1.1763272587866627,
+          0.9003216776056564,
+          8.145700894144799e-07,
+          0.9003245468059404,
+          1.2732475342524843
+        ]
+      },
+      "expected": {
+        "values": [
+          1.1763199553648058,
+          0.9003163161571061,
+          2.0475253503525845e-16,
+          0.9003163161571061,
+          1.2732395447351628
+        ]
+      },
+      "tolerance": 0.01,
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "4 sampling convergence",
+      "measured": {
+        "values": [
+          1.2752871546722482,
+          1.273751015443263,
+          1.2732715031666686
+        ],
+        "errors": [
+          0.002047609937085415,
+          0.0005114707081002035,
+          3.1958431505829665e-05
+        ],
+        "relative_1024_4096": 0.00037659860870349393
+      },
+      "expected": {
+        "monotonic_error": true,
+        "relative_1024_4096": "<= 0.005"
+      },
+      "tolerance": null,
+      "passed": true,
+      "details": ""
+    }
+  ]
+}

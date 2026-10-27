@@ -1,0 +1,15 @@
+{
+  "supercell_um": 56.0,
+  "m": 7,
+  "n": 5,
+  "samples_per_supercell": 128,
+  "n_supercells": 2,
+  "image_size_px": null,
+  "wavelength_m": 0.1e-9,
+  "z_m": 0.22,
+  "fill_factor": 0.5,
+  "phase_depth_rad": 3.141592653589793,
+  "detector_harmonic": 2,
+  "guard_bins": 2,
+  "kernel": "asm"
+}

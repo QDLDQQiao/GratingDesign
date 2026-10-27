@@ -1,0 +1,1203 @@
+{
+  "design": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 128,
+    "n_supercells": 2,
+    "image_size_px": null,
+    "wavelength_m": 1e-10,
+    "z_m": 0.3,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "coverage_config": {
+    "energies_keV": [
+      10.0,
+      11.0,
+      12.4,
+      14.0,
+      16.0
+    ],
+    "distances_m": [
+      0.08,
+      0.16,
+      0.24,
+      0.3,
+      0.4
+    ],
+    "reference_energy_keV": 12.39841984,
+    "visibility_threshold": 0.1,
+    "max_balance_cv": 0.35,
+    "max_contamination": 0.05
+  },
+  "patterns": [
+    {
+      "name": "star_4dir",
+      "mask_carriers": [
+        [
+          7,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          -5
+        ]
+      ],
+      "detector_carriers": [
+        [
+          14,
+          0
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          -10
+        ]
+      ],
+      "description": "Star-like four-direction carrier pattern."
+    },
+    {
+      "name": "grid_2dir",
+      "mask_carriers": [
+        [
+          7,
+          0
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "detector_carriers": [
+        [
+          14,
+          0
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      "description": "Axis-aligned two-direction grid pattern."
+    },
+    {
+      "name": "checkerboard_2dir",
+      "mask_carriers": [
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          -5
+        ]
+      ],
+      "detector_carriers": [
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          -10
+        ]
+      ],
+      "description": "Diagonal two-direction checkerboard-like pattern."
+    },
+    {
+      "name": "checkerboard_4dir_2shot",
+      "mask_carriers": [
+        [
+          7,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          -5
+        ]
+      ],
+      "detector_carriers": [
+        [
+          14,
+          0
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          -10
+        ]
+      ],
+      "description": "Two-shot checkerboard/grid four-direction coverage; optical coverage equals combined carriers."
+    }
+  ],
+  "summary": [
+    {
+      "pattern": "checkerboard_2dir",
+      "coverage_fraction": 0.84,
+      "mean_visibility_avg": 0.4015053434820186,
+      "min_visibility_worst": 0.0031064614077996396,
+      "balance_cv_worst": 0.12123231728798119
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "coverage_fraction": 0.96,
+      "mean_visibility_avg": 0.17028492172706047,
+      "min_visibility_worst": 0.0989859567981292,
+      "balance_cv_worst": 0.09572062837133127
+    },
+    {
+      "pattern": "grid_2dir",
+      "coverage_fraction": 0.8,
+      "mean_visibility_avg": 0.40239845564099996,
+      "min_visibility_worst": 0.006792368204272241,
+      "balance_cv_worst": 0.0005347090768776415
+    },
+    {
+      "pattern": "star_4dir",
+      "coverage_fraction": 0.96,
+      "mean_visibility_avg": 0.17028492172706047,
+      "min_visibility_worst": 0.0989859567981292,
+      "balance_cv_worst": 0.09572062837133127
+    }
+  ],
+  "rows": [
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.18190830135108776,
+      "min_visibility": 0.17953492974885654,
+      "balance_cv": 0.01304453014311094,
+      "contamination_mean": 0.03261244612629013,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.11686168448951467,
+      "min_visibility": 0.11340723432280089,
+      "balance_cv": 0.029559413443316335,
+      "contamination_mean": 0.023692994720359246,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.12404686538255921,
+      "min_visibility": 0.11737151361017434,
+      "balance_cv": 0.05380993508913955,
+      "contamination_mean": 0.006464676737752786,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.12010343069845425,
+      "min_visibility": 0.11675376560837235,
+      "balance_cv": 0.02788397128162238,
+      "contamination_mean": 0.037692428958172444,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.33648446931819015,
+      "min_visibility": 0.3262142551524263,
+      "balance_cv": 0.030521442810379305,
+      "contamination_mean": 0.0072610528405868124,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.19624232478553955,
+      "min_visibility": 0.19546227925759446,
+      "balance_cv": 0.003974487762020522,
+      "contamination_mean": 0.015858385159994787,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.14276280870819946,
+      "min_visibility": 0.13986773633475563,
+      "balance_cv": 0.02027749618572966,
+      "contamination_mean": 0.005933050200656433,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.14565786265542546,
+      "min_visibility": 0.1424718925411602,
+      "balance_cv": 0.02185859911159322,
+      "contamination_mean": 0.007397577140370113,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.10424407805165432,
+      "min_visibility": 0.0989859567981292,
+      "balance_cv": 0.05044033605819415,
+      "contamination_mean": 0.025774690010221327,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.46247915700933784,
+      "min_visibility": 0.4566187980948644,
+      "balance_cv": 0.012671483663075394,
+      "contamination_mean": 0.0010630794305368529,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.08,
+      "mean_visibility": 0.19534440288776014,
+      "min_visibility": 0.1942620952141978,
+      "balance_cv": 0.005535779251005734,
+      "contamination_mean": 0.00850243129475538,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.16,
+      "mean_visibility": 0.1630475185398263,
+      "min_visibility": 0.1625244937868889,
+      "balance_cv": 0.0032078082166845626,
+      "contamination_mean": 0.010494062877737314,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.24,
+      "mean_visibility": 0.13889300338913677,
+      "min_visibility": 0.12859519418471632,
+      "balance_cv": 0.07414173948729999,
+      "contamination_mean": 0.0031843255012347508,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.3,
+      "mean_visibility": 0.14250881398017012,
+      "min_visibility": 0.13368862807262397,
+      "balance_cv": 0.06189070168259309,
+      "contamination_mean": 0.0018192950290671153,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.4,
+      "mean_visibility": 0.2512453322378139,
+      "min_visibility": 0.24376053165241207,
+      "balance_cv": 0.029790804553762495,
+      "contamination_mean": 0.0066112149838406424,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.17780791636743087,
+      "min_visibility": 0.17654265216251308,
+      "balance_cv": 0.007109350651765457,
+      "contamination_mean": 0.018185175945619896,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.1776628740460045,
+      "min_visibility": 0.1775821880767873,
+      "balance_cv": 0.0004541541687090085,
+      "contamination_mean": 0.010551054454117347,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.130682471863106,
+      "min_visibility": 0.12213515087620436,
+      "balance_cv": 0.06540460301863474,
+      "contamination_mean": 0.009481012647452536,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.14865140515149944,
+      "min_visibility": 0.142693468216871,
+      "balance_cv": 0.040066506569470195,
+      "contamination_mean": 0.005904473872040111,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.1110990006083975,
+      "min_visibility": 0.10874423391001696,
+      "balance_cv": 0.021194832577169663,
+      "contamination_mean": 0.039189197594220376,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.1464141133229552,
+      "min_visibility": 0.14571365100227018,
+      "balance_cv": 0.004784121071088344,
+      "contamination_mean": 0.04659544364132609,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.17606924633732823,
+      "min_visibility": 0.17348087395891465,
+      "balance_cv": 0.014699860865331765,
+      "contamination_mean": 0.008714885534535904,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.12957909884816943,
+      "min_visibility": 0.12526851155075022,
+      "balance_cv": 0.03326587744879486,
+      "contamination_mean": 0.022304843931845578,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.12132950875931582,
+      "min_visibility": 0.10971556223556717,
+      "balance_cv": 0.09572062837133127,
+      "contamination_mean": 0.036179889799083834,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "star_4dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.11599735438763503,
+      "min_visibility": 0.10989365312012263,
+      "balance_cv": 0.05261865061158056,
+      "contamination_mean": 0.021146373260288297,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.478339984992717,
+      "min_visibility": 0.47828494290033813,
+      "balance_cv": 0.00011506897626324404,
+      "contamination_mean": 0.00012189217095101581,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.6066495486430645,
+      "min_visibility": 0.6066077208897463,
+      "balance_cv": 6.894879162399272e-05,
+      "contamination_mean": 0.00011627990250651505,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.03394217071872872,
+      "min_visibility": 0.03393446183141668,
+      "balance_cv": 0.00022711827643328311,
+      "contamination_mean": 0.005613695256893451,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.1661350605275243,
+      "min_visibility": 0.16608269677742468,
+      "balance_cv": 0.0003151878353271001,
+      "contamination_mean": 0.0005725801031984527,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.684081694825631,
+      "min_visibility": 0.6840184989233615,
+      "balance_cv": 9.238063632970847e-05,
+      "contamination_mean": 6.685841780664088e-05,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.46595736703895063,
+      "min_visibility": 0.4658984172485467,
+      "balance_cv": 0.0001265132704705993,
+      "contamination_mean": 0.00012996857215789365,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.7481927182274152,
+      "min_visibility": 0.7481467293000201,
+      "balance_cv": 6.146668669003003e-05,
+      "contamination_mean": 8.261269327488181e-05,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.17041127758639668,
+      "min_visibility": 0.17037226715558149,
+      "balance_cv": 0.00022891930257023816,
+      "contamination_mean": 0.0006861134775117752,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.02422565383082835,
+      "min_visibility": 0.0242224864042358,
+      "balance_cv": 0.00013074679489223412,
+      "contamination_mean": 0.013011601087916432,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.7161420365982599,
+      "min_visibility": 0.7160968366702037,
+      "balance_cv": 6.311587052044454e-05,
+      "contamination_mean": 7.176823993535955e-05,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.08,
+      "mean_visibility": 0.4051802464502335,
+      "min_visibility": 0.4051191568065143,
+      "balance_cv": 0.0001507715251530817,
+      "contamination_mean": 0.00013695989333845857,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.16,
+      "mean_visibility": 0.8104510167044447,
+      "min_visibility": 0.8103333451770471,
+      "balance_cv": 0.00014519264578895507,
+      "contamination_mean": 9.095395887602454e-05,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.24,
+      "mean_visibility": 0.4055110919840853,
+      "min_visibility": 0.40545113225730006,
+      "balance_cv": 0.00014786211270300433,
+      "contamination_mean": 9.557727349191708e-05,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.3,
+      "mean_visibility": 0.031002087019991513,
+      "min_visibility": 0.030996136939958067,
+      "balance_cv": 0.00019192514457519049,
+      "contamination_mean": 0.007112476413511019,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.4,
+      "mean_visibility": 0.404803319642817,
+      "min_visibility": 0.40474188377284076,
+      "balance_cv": 0.00015176720890151035,
+      "contamination_mean": 0.00015380547847903376,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.3227329188899729,
+      "min_visibility": 0.3226826886025863,
+      "balance_cv": 0.00015564042106207138,
+      "contamination_mean": 0.00017759435779099528,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.7598414081870517,
+      "min_visibility": 0.7597603334624731,
+      "balance_cv": 0.00010669953454112796,
+      "contamination_mean": 0.00010672997153814518,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.5932032811915536,
+      "min_visibility": 0.5931640203848826,
+      "balance_cv": 6.618440577770647e-05,
+      "contamination_mean": 0.00010962706521009253,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.20239057493631513,
+      "min_visibility": 0.2023540867508154,
+      "balance_cv": 0.00018028599163372845,
+      "contamination_mean": 0.0005062524299394513,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.08569038548862473,
+      "min_visibility": 0.08565274250653025,
+      "balance_cv": 0.00043929061445837107,
+      "contamination_mean": 0.0008708093464844116,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.23411177430342128,
+      "min_visibility": 0.2340765938646363,
+      "balance_cv": 0.0001502719753829831,
+      "contamination_mean": 0.0002548497604804921,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.6284726881912115,
+      "min_visibility": 0.628451642674217,
+      "balance_cv": 3.3486764643775615e-05,
+      "contamination_mean": 9.994527249496872e-05,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.6674420998109558,
+      "min_visibility": 0.6674337122996539,
+      "balance_cv": 1.2566650057548034e-05,
+      "contamination_mean": 8.67886965514432e-05,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.4082549831465284,
+      "min_visibility": 0.40820857220533024,
+      "balance_cv": 0.00011368126076624497,
+      "contamination_mean": 9.624962272631384e-05,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.006796002088275321,
+      "min_visibility": 0.006792368204272241,
+      "balance_cv": 0.0005347090768776415,
+      "contamination_mean": 0.19662218994096095,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.5101697618989753,
+      "min_visibility": 0.5098878808852774,
+      "balance_cv": 0.0005525239532987729,
+      "contamination_mean": 0.00036716802911811674,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.5760006076385558,
+      "min_visibility": 0.5749843837140081,
+      "balance_cv": 0.0017642757856001885,
+      "contamination_mean": 0.00040997427730696717,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.018199739093331606,
+      "min_visibility": 0.01776599717409168,
+      "balance_cv": 0.023832315233510596,
+      "contamination_mean": 0.03289413191700162,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.2202350669438145,
+      "min_visibility": 0.21933555826911516,
+      "balance_cv": 0.004084311763706722,
+      "contamination_mean": 0.0008418128164162443,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 10.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.6579097925737051,
+      "min_visibility": 0.65752319679739,
+      "balance_cv": 0.0005876121326644448,
+      "contamination_mean": 0.00028630332812280764,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.4960435046308659,
+      "min_visibility": 0.4956524806423736,
+      "balance_cv": 0.0007882856742238551,
+      "contamination_mean": 0.0003985359418374418,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.7352875100280138,
+      "min_visibility": 0.7341864841878161,
+      "balance_cv": 0.0014974085989245618,
+      "contamination_mean": 0.0004158610926155304,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.13356851288523586,
+      "min_visibility": 0.13319088689258818,
+      "balance_cv": 0.0028272081832050274,
+      "contamination_mean": 0.0015638293181808776,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.03628965934011645,
+      "min_visibility": 0.03556222872397101,
+      "balance_cv": 0.020045121099863998,
+      "contamination_mean": 0.011163187346702531,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 11.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.7443580020320071,
+      "min_visibility": 0.7429419742224532,
+      "balance_cv": 0.0019023478026544626,
+      "contamination_mean": 0.00023631535168025454,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.08,
+      "mean_visibility": 0.41435267167116496,
+      "min_visibility": 0.41354808519837977,
+      "balance_cv": 0.0019417914443272922,
+      "contamination_mean": 0.00044671729341668625,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.16,
+      "mean_visibility": 0.8224869026183323,
+      "min_visibility": 0.8210628816012905,
+      "balance_cv": 0.001731360113466286,
+      "contamination_mean": 0.0003952640628835549,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.24,
+      "mean_visibility": 0.37082398936690053,
+      "min_visibility": 0.3689844883771135,
+      "balance_cv": 0.0049605771000079115,
+      "contamination_mean": 0.0004470120636522793,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.3,
+      "mean_visibility": 0.015968965725411323,
+      "min_visibility": 0.015535333381822433,
+      "balance_cv": 0.027154691859526826,
+      "contamination_mean": 0.050765489184729215,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 12.4,
+      "distance_m": 0.4,
+      "mean_visibility": 0.4594693168785269,
+      "min_visibility": 0.45934985426295805,
+      "balance_cv": 0.00026000129101203055,
+      "contamination_mean": 0.0003739594794506047,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.3152203239117184,
+      "min_visibility": 0.3147208175022941,
+      "balance_cv": 0.0015846262805192853,
+      "contamination_mean": 0.0005030913967269297,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.761046383914253,
+      "min_visibility": 0.7602023321874384,
+      "balance_cv": 0.0011090673901812736,
+      "contamination_mean": 0.00041182734646205796,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.5637080510937464,
+      "min_visibility": 0.5630681408188382,
+      "balance_cv": 0.001135180300630237,
+      "contamination_mean": 0.0003822775609445197,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.1632827014839651,
+      "min_visibility": 0.16321201626075313,
+      "balance_cv": 0.0004329008680622865,
+      "contamination_mean": 0.0011375096252764327,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 14.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.13629468541966974,
+      "min_visibility": 0.13527330159422463,
+      "balance_cv": 0.007493937289631925,
+      "contamination_mean": 0.001774791502330958,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.22676726119173474,
+      "min_visibility": 0.22672931005960553,
+      "balance_cv": 0.0001673571922584658,
+      "contamination_mean": 0.0006253963493704623,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.62204828393772,
+      "min_visibility": 0.6210452776986808,
+      "balance_cv": 0.0016124250559618667,
+      "contamination_mean": 0.00044231852665713406,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.6494156480360329,
+      "min_visibility": 0.6484160073202203,
+      "balance_cv": 0.0015392926222761406,
+      "contamination_mean": 0.0004071559997047635,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.3851512246523894,
+      "min_visibility": 0.383900582154284,
+      "balance_cv": 0.003247146622042106,
+      "contamination_mean": 0.00040996736689322393,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "energy_keV": 16.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.0035350200842759697,
+      "min_visibility": 0.0031064614077996396,
+      "balance_cv": 0.12123231728798119,
+      "contamination_mean": 0.8476012092186084,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 10.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.18190830135108776,
+      "min_visibility": 0.17953492974885654,
+      "balance_cv": 0.01304453014311094,
+      "contamination_mean": 0.03261244612629013,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 10.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.11686168448951467,
+      "min_visibility": 0.11340723432280089,
+      "balance_cv": 0.029559413443316335,
+      "contamination_mean": 0.023692994720359246,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 10.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.12404686538255921,
+      "min_visibility": 0.11737151361017434,
+      "balance_cv": 0.05380993508913955,
+      "contamination_mean": 0.006464676737752786,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 10.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.12010343069845425,
+      "min_visibility": 0.11675376560837235,
+      "balance_cv": 0.02788397128162238,
+      "contamination_mean": 0.037692428958172444,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 10.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.33648446931819015,
+      "min_visibility": 0.3262142551524263,
+      "balance_cv": 0.030521442810379305,
+      "contamination_mean": 0.0072610528405868124,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 11.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.19624232478553955,
+      "min_visibility": 0.19546227925759446,
+      "balance_cv": 0.003974487762020522,
+      "contamination_mean": 0.015858385159994787,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 11.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.14276280870819946,
+      "min_visibility": 0.13986773633475563,
+      "balance_cv": 0.02027749618572966,
+      "contamination_mean": 0.005933050200656433,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 11.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.14565786265542546,
+      "min_visibility": 0.1424718925411602,
+      "balance_cv": 0.02185859911159322,
+      "contamination_mean": 0.007397577140370113,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 11.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.10424407805165432,
+      "min_visibility": 0.0989859567981292,
+      "balance_cv": 0.05044033605819415,
+      "contamination_mean": 0.025774690010221327,
+      "pass_coverage": false
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 11.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.46247915700933784,
+      "min_visibility": 0.4566187980948644,
+      "balance_cv": 0.012671483663075394,
+      "contamination_mean": 0.0010630794305368529,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 12.4,
+      "distance_m": 0.08,
+      "mean_visibility": 0.19534440288776014,
+      "min_visibility": 0.1942620952141978,
+      "balance_cv": 0.005535779251005734,
+      "contamination_mean": 0.00850243129475538,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 12.4,
+      "distance_m": 0.16,
+      "mean_visibility": 0.1630475185398263,
+      "min_visibility": 0.1625244937868889,
+      "balance_cv": 0.0032078082166845626,
+      "contamination_mean": 0.010494062877737314,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 12.4,
+      "distance_m": 0.24,
+      "mean_visibility": 0.13889300338913677,
+      "min_visibility": 0.12859519418471632,
+      "balance_cv": 0.07414173948729999,
+      "contamination_mean": 0.0031843255012347508,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 12.4,
+      "distance_m": 0.3,
+      "mean_visibility": 0.14250881398017012,
+      "min_visibility": 0.13368862807262397,
+      "balance_cv": 0.06189070168259309,
+      "contamination_mean": 0.0018192950290671153,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 12.4,
+      "distance_m": 0.4,
+      "mean_visibility": 0.2512453322378139,
+      "min_visibility": 0.24376053165241207,
+      "balance_cv": 0.029790804553762495,
+      "contamination_mean": 0.0066112149838406424,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 14.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.17780791636743087,
+      "min_visibility": 0.17654265216251308,
+      "balance_cv": 0.007109350651765457,
+      "contamination_mean": 0.018185175945619896,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 14.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.1776628740460045,
+      "min_visibility": 0.1775821880767873,
+      "balance_cv": 0.0004541541687090085,
+      "contamination_mean": 0.010551054454117347,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 14.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.130682471863106,
+      "min_visibility": 0.12213515087620436,
+      "balance_cv": 0.06540460301863474,
+      "contamination_mean": 0.009481012647452536,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 14.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.14865140515149944,
+      "min_visibility": 0.142693468216871,
+      "balance_cv": 0.040066506569470195,
+      "contamination_mean": 0.005904473872040111,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 14.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.1110990006083975,
+      "min_visibility": 0.10874423391001696,
+      "balance_cv": 0.021194832577169663,
+      "contamination_mean": 0.039189197594220376,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 16.0,
+      "distance_m": 0.08,
+      "mean_visibility": 0.1464141133229552,
+      "min_visibility": 0.14571365100227018,
+      "balance_cv": 0.004784121071088344,
+      "contamination_mean": 0.04659544364132609,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 16.0,
+      "distance_m": 0.16,
+      "mean_visibility": 0.17606924633732823,
+      "min_visibility": 0.17348087395891465,
+      "balance_cv": 0.014699860865331765,
+      "contamination_mean": 0.008714885534535904,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 16.0,
+      "distance_m": 0.24,
+      "mean_visibility": 0.12957909884816943,
+      "min_visibility": 0.12526851155075022,
+      "balance_cv": 0.03326587744879486,
+      "contamination_mean": 0.022304843931845578,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 16.0,
+      "distance_m": 0.3,
+      "mean_visibility": 0.12132950875931582,
+      "min_visibility": 0.10971556223556717,
+      "balance_cv": 0.09572062837133127,
+      "contamination_mean": 0.036179889799083834,
+      "pass_coverage": true
+    },
+    {
+      "pattern": "checkerboard_4dir_2shot",
+      "energy_keV": 16.0,
+      "distance_m": 0.4,
+      "mean_visibility": 0.11599735438763503,
+      "min_visibility": 0.10989365312012263,
+      "balance_cv": 0.05261865061158056,
+      "contamination_mean": 0.021146373260288297,
+      "pass_coverage": true
+    }
+  ],
+  "files": {
+    "csv": "coverage_comparison.csv",
+    "heatmap": "coverage_heatmap.png"
+  }
+}

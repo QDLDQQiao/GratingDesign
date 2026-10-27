@@ -1,0 +1,393 @@
+{
+  "design": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 128,
+    "n_supercells": 2,
+    "image_size_px": null,
+    "wavelength_m": 1e-10,
+    "z_m": 0.08,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "config": {
+    "photons_per_pixel": [
+      300.0,
+      1000.0,
+      3000.0,
+      10000.0
+    ],
+    "repeats": 5,
+    "visibility": 0.19535494745848758,
+    "smoothing_sigma_px": 5.0,
+    "window_sigma_bins": 2.0,
+    "seed": 23,
+    "phase_amplitude_rad": 0.08,
+    "absorption_peak_mu": 0.05,
+    "dark_field_mean": 0.035,
+    "dark_field_anisotropy": 0.35,
+    "dark_field_angle_rad": 0.55
+  },
+  "modalities": [
+    {
+      "name": "star_4dir_single",
+      "carriers": [
+        [
+          14,
+          0
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          -10
+        ]
+      ],
+      "exposures": 1,
+      "description": "Star-like SB-BSTG single-shot four-direction carrier set."
+    },
+    {
+      "name": "grid_2dir_single",
+      "carriers": [
+        [
+          14,
+          0
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      "exposures": 1,
+      "description": "Axis-aligned grid single-shot two-direction carrier set."
+    },
+    {
+      "name": "checkerboard_2dir_single",
+      "carriers": [
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          -10
+        ]
+      ],
+      "exposures": 1,
+      "description": "Single checkerboard-like diagonal two-direction carrier set."
+    },
+    {
+      "name": "checkerboard_4dir_2shot",
+      "carriers": [
+        [
+          14,
+          0
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          -10
+        ]
+      ],
+      "exposures": 2,
+      "description": "Two checkerboard/grid exposures with total dose split across shots."
+    }
+  ],
+  "rows": [
+    {
+      "modality": "star_4dir_single",
+      "photons_per_pixel": 300.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": true,
+      "dark_field_fit_rank": 3,
+      "phase_rmse_rad_mean": 0.033080921099491845,
+      "phase_rmse_rad_std": 0.006840356125575851,
+      "transmission_rmse_mean": 0.001960524407406318,
+      "transmission_rmse_std": 0.0001986238460722917,
+      "dark_field_mean_rmse_mean": 0.0038880893012204014,
+      "dark_field_mean_rmse_std": 0.0006274105126263941,
+      "dark_field_anisotropy_rmse_mean": 0.27627115003256575,
+      "dark_field_anisotropy_rmse_std": 0.11524693613246138,
+      "dark_field_angle_mae_deg_mean": 18.40258562102504,
+      "dark_field_angle_mae_deg_std": 4.929197845982549
+    },
+    {
+      "modality": "star_4dir_single",
+      "photons_per_pixel": 1000.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": true,
+      "dark_field_fit_rank": 3,
+      "phase_rmse_rad_mean": 0.019136305739595676,
+      "phase_rmse_rad_std": 0.003292173101154651,
+      "transmission_rmse_mean": 0.0018090524374836752,
+      "transmission_rmse_std": 0.00012780211762479672,
+      "dark_field_mean_rmse_mean": 0.002301593260929945,
+      "dark_field_mean_rmse_std": 0.00023716168300068726,
+      "dark_field_anisotropy_rmse_mean": 0.15013208548749762,
+      "dark_field_anisotropy_rmse_std": 0.013880475674834436,
+      "dark_field_angle_mae_deg_mean": 8.784809678871056,
+      "dark_field_angle_mae_deg_std": 2.0078569555192067
+    },
+    {
+      "modality": "star_4dir_single",
+      "photons_per_pixel": 3000.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": true,
+      "dark_field_fit_rank": 3,
+      "phase_rmse_rad_mean": 0.01577089121530659,
+      "phase_rmse_rad_std": 0.0016027319540913047,
+      "transmission_rmse_mean": 0.001789115176638539,
+      "transmission_rmse_std": 4.473521922086247e-05,
+      "dark_field_mean_rmse_mean": 0.0013159898489865831,
+      "dark_field_mean_rmse_std": 0.00017883204738646362,
+      "dark_field_anisotropy_rmse_mean": 0.06744062138550745,
+      "dark_field_anisotropy_rmse_std": 0.015305142341600917,
+      "dark_field_angle_mae_deg_mean": 6.007271467035665,
+      "dark_field_angle_mae_deg_std": 1.8731208366615444
+    },
+    {
+      "modality": "star_4dir_single",
+      "photons_per_pixel": 10000.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": true,
+      "dark_field_fit_rank": 3,
+      "phase_rmse_rad_mean": 0.009498474346502467,
+      "phase_rmse_rad_std": 0.0006397741188480458,
+      "transmission_rmse_mean": 0.0017566001661056218,
+      "transmission_rmse_std": 3.16194767139732e-05,
+      "dark_field_mean_rmse_mean": 0.001020440536388069,
+      "dark_field_mean_rmse_std": 0.00014393178077316363,
+      "dark_field_anisotropy_rmse_mean": 0.04518734895498151,
+      "dark_field_anisotropy_rmse_std": 0.006630613890275254,
+      "dark_field_angle_mae_deg_mean": 3.2475257574898477,
+      "dark_field_angle_mae_deg_std": 0.4853750609097289
+    },
+    {
+      "modality": "grid_2dir_single",
+      "photons_per_pixel": 300.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": false,
+      "dark_field_fit_rank": 2,
+      "phase_rmse_rad_mean": 0.04760401153502031,
+      "phase_rmse_rad_std": 0.005721609903495798,
+      "transmission_rmse_mean": 0.0018588739078587596,
+      "transmission_rmse_std": 0.00022119282039424531,
+      "dark_field_mean_rmse_mean": 0.005529862426369643,
+      "dark_field_mean_rmse_std": 0.0006298697131740073,
+      "dark_field_anisotropy_rmse_mean": NaN,
+      "dark_field_anisotropy_rmse_std": NaN,
+      "dark_field_angle_mae_deg_mean": NaN,
+      "dark_field_angle_mae_deg_std": NaN
+    },
+    {
+      "modality": "grid_2dir_single",
+      "photons_per_pixel": 1000.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": false,
+      "dark_field_fit_rank": 2,
+      "phase_rmse_rad_mean": 0.02784513805492033,
+      "phase_rmse_rad_std": 0.0038080916270347097,
+      "transmission_rmse_mean": 0.0018184459277899522,
+      "transmission_rmse_std": 0.00010021936352300858,
+      "dark_field_mean_rmse_mean": 0.0028230630230861005,
+      "dark_field_mean_rmse_std": 0.0003962479265825066,
+      "dark_field_anisotropy_rmse_mean": NaN,
+      "dark_field_anisotropy_rmse_std": NaN,
+      "dark_field_angle_mae_deg_mean": NaN,
+      "dark_field_angle_mae_deg_std": NaN
+    },
+    {
+      "modality": "grid_2dir_single",
+      "photons_per_pixel": 3000.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": false,
+      "dark_field_fit_rank": 2,
+      "phase_rmse_rad_mean": 0.01630625979134164,
+      "phase_rmse_rad_std": 0.0018046324884656664,
+      "transmission_rmse_mean": 0.0018050526474602771,
+      "transmission_rmse_std": 4.979437765454557e-05,
+      "dark_field_mean_rmse_mean": 0.0015859374621634767,
+      "dark_field_mean_rmse_std": 0.00023569488568953332,
+      "dark_field_anisotropy_rmse_mean": NaN,
+      "dark_field_anisotropy_rmse_std": NaN,
+      "dark_field_angle_mae_deg_mean": NaN,
+      "dark_field_angle_mae_deg_std": NaN
+    },
+    {
+      "modality": "grid_2dir_single",
+      "photons_per_pixel": 10000.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": false,
+      "dark_field_fit_rank": 2,
+      "phase_rmse_rad_mean": 0.012392691001798215,
+      "phase_rmse_rad_std": 0.0018813927629498229,
+      "transmission_rmse_mean": 0.0017540055930012816,
+      "transmission_rmse_std": 3.228808547562889e-05,
+      "dark_field_mean_rmse_mean": 0.0012294946747812344,
+      "dark_field_mean_rmse_std": 9.617472477953536e-05,
+      "dark_field_anisotropy_rmse_mean": NaN,
+      "dark_field_anisotropy_rmse_std": NaN,
+      "dark_field_angle_mae_deg_mean": NaN,
+      "dark_field_angle_mae_deg_std": NaN
+    },
+    {
+      "modality": "checkerboard_2dir_single",
+      "photons_per_pixel": 300.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": false,
+      "dark_field_fit_rank": 2,
+      "phase_rmse_rad_mean": 0.04221472893708435,
+      "phase_rmse_rad_std": 0.011204861772521902,
+      "transmission_rmse_mean": 0.0018995311233236663,
+      "transmission_rmse_std": 0.00022092318161203998,
+      "dark_field_mean_rmse_mean": 0.005580962967880502,
+      "dark_field_mean_rmse_std": 0.0011143375197045283,
+      "dark_field_anisotropy_rmse_mean": NaN,
+      "dark_field_anisotropy_rmse_std": NaN,
+      "dark_field_angle_mae_deg_mean": NaN,
+      "dark_field_angle_mae_deg_std": NaN
+    },
+    {
+      "modality": "checkerboard_2dir_single",
+      "photons_per_pixel": 1000.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": false,
+      "dark_field_fit_rank": 2,
+      "phase_rmse_rad_mean": 0.027201571499754485,
+      "phase_rmse_rad_std": 0.006261264869679417,
+      "transmission_rmse_mean": 0.0018594575466392628,
+      "transmission_rmse_std": 7.460856371847453e-05,
+      "dark_field_mean_rmse_mean": 0.0032353196355465116,
+      "dark_field_mean_rmse_std": 0.00036576343626124736,
+      "dark_field_anisotropy_rmse_mean": NaN,
+      "dark_field_anisotropy_rmse_std": NaN,
+      "dark_field_angle_mae_deg_mean": NaN,
+      "dark_field_angle_mae_deg_std": NaN
+    },
+    {
+      "modality": "checkerboard_2dir_single",
+      "photons_per_pixel": 3000.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": false,
+      "dark_field_fit_rank": 2,
+      "phase_rmse_rad_mean": 0.01667558513041369,
+      "phase_rmse_rad_std": 0.00463601053438813,
+      "transmission_rmse_mean": 0.0017817063872593187,
+      "transmission_rmse_std": 3.781893339306521e-05,
+      "dark_field_mean_rmse_mean": 0.0018850438220673106,
+      "dark_field_mean_rmse_std": 0.00016496951907150263,
+      "dark_field_anisotropy_rmse_mean": NaN,
+      "dark_field_anisotropy_rmse_std": NaN,
+      "dark_field_angle_mae_deg_mean": NaN,
+      "dark_field_angle_mae_deg_std": NaN
+    },
+    {
+      "modality": "checkerboard_2dir_single",
+      "photons_per_pixel": 10000.0,
+      "exposures": 1,
+      "directional_dark_field_identifiable": false,
+      "dark_field_fit_rank": 2,
+      "phase_rmse_rad_mean": 0.01174879361141841,
+      "phase_rmse_rad_std": 0.001352338328036994,
+      "transmission_rmse_mean": 0.0017576964060198818,
+      "transmission_rmse_std": 3.8043089725231966e-05,
+      "dark_field_mean_rmse_mean": 0.001272765522719536,
+      "dark_field_mean_rmse_std": 0.0002276941672353676,
+      "dark_field_anisotropy_rmse_mean": NaN,
+      "dark_field_anisotropy_rmse_std": NaN,
+      "dark_field_angle_mae_deg_mean": NaN,
+      "dark_field_angle_mae_deg_std": NaN
+    },
+    {
+      "modality": "checkerboard_4dir_2shot",
+      "photons_per_pixel": 300.0,
+      "exposures": 2,
+      "directional_dark_field_identifiable": true,
+      "dark_field_fit_rank": 3,
+      "phase_rmse_rad_mean": 0.05055773889383648,
+      "phase_rmse_rad_std": 0.012503301179332819,
+      "transmission_rmse_mean": 0.0018165048085672605,
+      "transmission_rmse_std": 8.827376236205337e-05,
+      "dark_field_mean_rmse_mean": 0.005308247411286689,
+      "dark_field_mean_rmse_std": 0.00042288125393040405,
+      "dark_field_anisotropy_rmse_mean": 0.3361373843228955,
+      "dark_field_anisotropy_rmse_std": 0.11265358575254397,
+      "dark_field_angle_mae_deg_mean": 27.406990143845167,
+      "dark_field_angle_mae_deg_std": 6.2687968677851424
+    },
+    {
+      "modality": "checkerboard_4dir_2shot",
+      "photons_per_pixel": 1000.0,
+      "exposures": 2,
+      "directional_dark_field_identifiable": true,
+      "dark_field_fit_rank": 3,
+      "phase_rmse_rad_mean": 0.02960275159836146,
+      "phase_rmse_rad_std": 0.002161191452605976,
+      "transmission_rmse_mean": 0.0018171812864336465,
+      "transmission_rmse_std": 0.00019497235050437752,
+      "dark_field_mean_rmse_mean": 0.0028974370227175376,
+      "dark_field_mean_rmse_std": 0.0005748292636687986,
+      "dark_field_anisotropy_rmse_mean": 0.19210830011556138,
+      "dark_field_anisotropy_rmse_std": 0.044948562524568865,
+      "dark_field_angle_mae_deg_mean": 14.283449231329726,
+      "dark_field_angle_mae_deg_std": 2.454155414913641
+    },
+    {
+      "modality": "checkerboard_4dir_2shot",
+      "photons_per_pixel": 3000.0,
+      "exposures": 2,
+      "directional_dark_field_identifiable": true,
+      "dark_field_fit_rank": 3,
+      "phase_rmse_rad_mean": 0.016723959714509035,
+      "phase_rmse_rad_std": 0.0030860434062735015,
+      "transmission_rmse_mean": 0.0018884874243361594,
+      "transmission_rmse_std": 0.00015418100264631213,
+      "dark_field_mean_rmse_mean": 0.0017313735309715142,
+      "dark_field_mean_rmse_std": 0.00023273623415770043,
+      "dark_field_anisotropy_rmse_mean": 0.12097587001654911,
+      "dark_field_anisotropy_rmse_std": 0.020494324500027812,
+      "dark_field_angle_mae_deg_mean": 7.413880642583026,
+      "dark_field_angle_mae_deg_std": 1.3661716236587937
+    },
+    {
+      "modality": "checkerboard_4dir_2shot",
+      "photons_per_pixel": 10000.0,
+      "exposures": 2,
+      "directional_dark_field_identifiable": true,
+      "dark_field_fit_rank": 3,
+      "phase_rmse_rad_mean": 0.012957851852816036,
+      "phase_rmse_rad_std": 0.0016212641415806956,
+      "transmission_rmse_mean": 0.001710364920068511,
+      "transmission_rmse_std": 4.7158224319566765e-05,
+      "dark_field_mean_rmse_mean": 0.0010385811836525689,
+      "dark_field_mean_rmse_std": 6.118599016729075e-05,
+      "dark_field_anisotropy_rmse_mean": 0.059207394162883564,
+      "dark_field_anisotropy_rmse_std": 0.014076428579000778,
+      "dark_field_angle_mae_deg_mean": 4.444123530068175,
+      "dark_field_angle_mae_deg_std": 0.6030341981295579
+    }
+  ],
+  "files": {
+    "csv": "modality_comparison.csv",
+    "plot": "modality_comparison.png",
+    "recovered_maps_plot": "modality_recovered_maps.png",
+    "error_maps_plot": "modality_error_maps.png"
+  }
+}

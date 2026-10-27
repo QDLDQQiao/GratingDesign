@@ -1,0 +1,96 @@
+{
+  "config": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 112,
+    "n_supercells": 2,
+    "image_size_px": null,
+    "wavelength_m": 8.856014173800019e-11,
+    "z_m": 0.4,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "candidate": {
+    "amplitudes": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "phases_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "metrics": {
+    "score": 0.1499041912414746,
+    "mean_visibility": 0.1276705690924904,
+    "min_visibility": 0.1264876198217223,
+    "balance_cv": 0.009239873161159743,
+    "contamination_mean": 0.03077163600020216,
+    "fill_factor": 0.5,
+    "visibility": [
+      0.1264876198217223,
+      0.12649554759384402,
+      0.12890582175251275,
+      0.12879328720188246
+    ],
+    "phase_noise_factor": 3.117730623082287e-05,
+    "dark_field_noise_factor": 7.833327500690053
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "score": 0.1499041912414746,
+      "mean_visibility": 0.1276705690924904,
+      "min_visibility": 0.1264876198217223,
+      "balance_cv": 0.009239873161159743,
+      "contamination_mean": 0.03077163600020216,
+      "amplitudes": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "phases_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "iteration": 1,
+      "score": -0.08925118110438726,
+      "mean_visibility": 0.12713419232368484,
+      "min_visibility": 0.06943582955789562,
+      "balance_cv": 0.6353847360810422,
+      "contamination_mean": 0.056798365945906364,
+      "amplitudes": [
+        0.994845332501735,
+        0.8623572765030012,
+        0.8379974468426571,
+        1.3396100024395419
+      ],
+      "phases_rad": [
+        -1.7599751907922723,
+        -2.9404782634674285,
+        2.2286276682138313,
+        -2.068270042119269
+      ]
+    }
+  ],
+  "files": {
+    "thickness_map_m": "thickness_map_m.npy",
+    "transmission_real_imag": "transmission_real_imag.npy",
+    "intensity": "intensity.npy",
+    "summary_plot": "design_summary.png",
+    "history_plot": "optimization_history.png"
+  }
+}

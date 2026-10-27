@@ -1,0 +1,357 @@
+{
+  "design": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 112,
+    "n_supercells": 2,
+    "image_size_px": null,
+    "wavelength_m": 8.856014173800019e-11,
+    "z_m": 0.4,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "optimization": {
+    "iterations": 2,
+    "shortlisted_candidates": 2,
+    "search_photons_per_pixel": 3000.0,
+    "search_repeats": 2,
+    "validation_photons_per_pixel": 10000.0,
+    "validation_repeats": 5,
+    "seed": 73,
+    "phase_smoothing_sigma_px": 5.0,
+    "dark_field_smoothing_sigma_px": 16.0
+  },
+  "baseline": {
+    "phase_rmse_rad": 0.0029462804868277664,
+    "transmission_rmse": 0.00033029308830256107,
+    "dark_field_mean_rmse": 0.00137004031975873,
+    "dark_field_anisotropy_rmse": 0.09567392835711672,
+    "dark_field_angle_mae_deg": 5.520950533176426,
+    "mean_visibility": 0.1276705690924904,
+    "min_visibility": 0.1264876198217223,
+    "balance_cv": 0.009239873161159743,
+    "contamination_mean": 0.03077163600020216
+  },
+  "patterns": {
+    "H3": {
+      "candidate": {
+        "amplitudes": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "phases_rad": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "physical_metrics": {
+        "visibility": [
+          0.44336357183640024,
+          0.426373420284455,
+          0.42596178853493644
+        ],
+        "mean_visibility": 0.4318995935519306,
+        "min_visibility": 0.42596178853493644,
+        "balance_cv": 0.018772878210167692,
+        "contamination_mean": 5.769308558519192e-06
+      },
+      "search_metrics": {
+        "phase_rmse_rad": 0.0026583608359740107,
+        "transmission_rmse": 0.0005215417103385082,
+        "dark_field_mean_rmse": 0.0012474089260484426,
+        "dark_field_anisotropy_rmse": 0.05744621995962067,
+        "dark_field_angle_mae_deg": 2.9365632774860284,
+        "mean_visibility": 0.4318995935519306,
+        "min_visibility": 0.42596178853493644,
+        "balance_cv": 0.018772878210167692,
+        "contamination_mean": 5.769308558519192e-06
+      },
+      "validation_metrics": {
+        "phase_rmse_rad": 0.0016658530689534917,
+        "transmission_rmse": 0.0003291804973213493,
+        "dark_field_mean_rmse": 0.0007992335234724349,
+        "dark_field_anisotropy_rmse": 0.024833450748512054,
+        "dark_field_angle_mae_deg": 1.6262440798225861,
+        "mean_visibility": 0.4318995935519306,
+        "min_visibility": 0.42596178853493644,
+        "balance_cv": 0.018772878210167692,
+        "contamination_mean": 5.769308558519192e-06
+      },
+      "physical_history": [
+        {
+          "iteration": 0,
+          "candidate": {
+            "amplitudes": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "phases_rad": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "physical_score": 1.7041502110394102,
+          "mean_visibility": 0.4318995935519306,
+          "min_visibility": 0.42596178853493644,
+          "balance_cv": 0.018772878210167692,
+          "contamination_mean": 5.769308558519192e-06
+        },
+        {
+          "iteration": 1,
+          "candidate": {
+            "amplitudes": [
+              0.9904270460746506,
+              0.7443777992198592,
+              0.6991381155649345
+            ],
+            "phases_rad": [
+              3.0483322535705044,
+              -1.7599751907922723,
+              -2.9404782634674285
+            ]
+          },
+          "physical_score": 0.6154480815932791,
+          "mean_visibility": 0.3603016298963914,
+          "min_visibility": 0.16099874491283225,
+          "balance_cv": 0.7594992768053632,
+          "contamination_mean": 0.0
+        }
+      ],
+      "shortlist": [
+        {
+          "iteration": 0,
+          "candidate": {
+            "amplitudes": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "phases_rad": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "physical_score": 1.7041502110394102,
+          "mean_visibility": 0.4318995935519306,
+          "min_visibility": 0.42596178853493644,
+          "balance_cv": 0.018772878210167692,
+          "contamination_mean": 5.769308558519192e-06,
+          "search_metrics": {
+            "phase_rmse_rad": 0.0026583608359740107,
+            "transmission_rmse": 0.0005215417103385082,
+            "dark_field_mean_rmse": 0.0012474089260484426,
+            "dark_field_anisotropy_rmse": 0.05744621995962067,
+            "dark_field_angle_mae_deg": 2.9365632774860284,
+            "mean_visibility": 0.4318995935519306,
+            "min_visibility": 0.42596178853493644,
+            "balance_cv": 0.018772878210167692,
+            "contamination_mean": 5.769308558519192e-06
+          },
+          "joint_score": 2.638906993174128
+        },
+        {
+          "iteration": 1,
+          "candidate": {
+            "amplitudes": [
+              0.9904270460746506,
+              0.7443777992198592,
+              0.6991381155649345
+            ],
+            "phases_rad": [
+              3.0483322535705044,
+              -1.7599751907922723,
+              -2.9404782634674285
+            ]
+          },
+          "physical_score": 0.6154480815932791,
+          "mean_visibility": 0.3603016298963914,
+          "min_visibility": 0.16099874491283225,
+          "balance_cv": 0.7594992768053632,
+          "contamination_mean": 0.0,
+          "search_metrics": {
+            "phase_rmse_rad": 0.0024649363887166353,
+            "transmission_rmse": 0.0005456686543294587,
+            "dark_field_mean_rmse": 0.0012770509274596402,
+            "dark_field_anisotropy_rmse": 0.06517192355646492,
+            "dark_field_angle_mae_deg": 3.6070193124282506,
+            "mean_visibility": 0.3603016298963914,
+            "min_visibility": 0.16099874491283225,
+            "balance_cv": 0.7594992768053632,
+            "contamination_mean": 0.0
+          },
+          "joint_score": 2.238049460512279
+        }
+      ]
+    },
+    "H3_4L": {
+      "candidate": {
+        "amplitudes": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "phases_rad": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "physical_metrics": {
+        "visibility": [
+          0.18747116537777941,
+          0.25948848875870845,
+          0.25898936000852857
+        ],
+        "mean_visibility": 0.23531633804833882,
+        "min_visibility": 0.18747116537777941,
+        "balance_cv": 0.14377352617123787,
+        "contamination_mean": 0.0005006107697806877
+      },
+      "search_metrics": {
+        "phase_rmse_rad": 0.0044035185297604685,
+        "transmission_rmse": 0.0004901730728946611,
+        "dark_field_mean_rmse": 0.001449504077804393,
+        "dark_field_anisotropy_rmse": 0.08664375123447793,
+        "dark_field_angle_mae_deg": 6.56343723627432,
+        "mean_visibility": 0.23531633804833882,
+        "min_visibility": 0.18747116537777941,
+        "balance_cv": 0.14377352617123787,
+        "contamination_mean": 0.0005006107697806877
+      },
+      "validation_metrics": {
+        "phase_rmse_rad": 0.0024089532706439163,
+        "transmission_rmse": 0.0003377487304212884,
+        "dark_field_mean_rmse": 0.001009121107417481,
+        "dark_field_anisotropy_rmse": 0.057825727530504814,
+        "dark_field_angle_mae_deg": 3.124367121614926,
+        "mean_visibility": 0.23531633804833882,
+        "min_visibility": 0.18747116537777941,
+        "balance_cv": 0.14377352617123787,
+        "contamination_mean": 0.0005006107697806877
+      },
+      "physical_history": [
+        {
+          "iteration": 0,
+          "candidate": {
+            "amplitudes": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "phases_rad": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "physical_score": 0.7543474709454154,
+          "mean_visibility": 0.23531633804833882,
+          "min_visibility": 0.18747116537777941,
+          "balance_cv": 0.14377352617123787,
+          "contamination_mean": 0.0005006107697806877
+        },
+        {
+          "iteration": 1,
+          "candidate": {
+            "amplitudes": [
+              1.2529608142721922,
+              0.8006205152758503,
+              0.8344582990241534
+            ],
+            "phases_rad": [
+              1.7524528875597065,
+              -0.27243983332189137,
+              -1.6558256471520376
+            ]
+          },
+          "physical_score": 0.011825085234174554,
+          "mean_visibility": 0.10021259978829528,
+          "min_visibility": 0.04002237457491444,
+          "balance_cv": 0.6948487942628802,
+          "contamination_mean": 0.0
+        }
+      ],
+      "shortlist": [
+        {
+          "iteration": 0,
+          "candidate": {
+            "amplitudes": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "phases_rad": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "physical_score": 0.7543474709454154,
+          "mean_visibility": 0.23531633804833882,
+          "min_visibility": 0.18747116537777941,
+          "balance_cv": 0.14377352617123787,
+          "contamination_mean": 0.0005006107697806877,
+          "search_metrics": {
+            "phase_rmse_rad": 0.0044035185297604685,
+            "transmission_rmse": 0.0004901730728946611,
+            "dark_field_mean_rmse": 0.001449504077804393,
+            "dark_field_anisotropy_rmse": 0.08664375123447793,
+            "dark_field_angle_mae_deg": 6.56343723627432,
+            "mean_visibility": 0.23531633804833882,
+            "min_visibility": 0.18747116537777941,
+            "balance_cv": 0.14377352617123787,
+            "contamination_mean": 0.0005006107697806877
+          },
+          "joint_score": 2.0121097301254083
+        },
+        {
+          "iteration": 1,
+          "candidate": {
+            "amplitudes": [
+              1.2529608142721922,
+              0.8006205152758503,
+              0.8344582990241534
+            ],
+            "phases_rad": [
+              1.7524528875597065,
+              -0.27243983332189137,
+              -1.6558256471520376
+            ]
+          },
+          "physical_score": 0.011825085234174554,
+          "mean_visibility": 0.10021259978829528,
+          "min_visibility": 0.04002237457491444,
+          "balance_cv": 0.6948487942628802,
+          "contamination_mean": 0.0,
+          "search_metrics": {
+            "phase_rmse_rad": 0.010608460625673739,
+            "transmission_rmse": 0.0005279596170365351,
+            "dark_field_mean_rmse": 0.0035712408670717996,
+            "dark_field_anisotropy_rmse": 0.25908798370817676,
+            "dark_field_angle_mae_deg": 18.271836555670127,
+            "mean_visibility": 0.10021259978829528,
+            "min_visibility": 0.04002237457491444,
+            "balance_cv": 0.6948487942628802,
+            "contamination_mean": 0.0
+          },
+          "joint_score": 0.8212941531404343
+        }
+      ]
+    }
+  },
+  "method": "Stage 1 ranks random amplitude/phase candidates using propagated target-carrier visibility, balance, and contamination. Stage 2 ranks the strongest candidates by matched reconstruction settings and dose. The phase/T/D reconstruction remains visibility-calibrated rather than end-to-end sample-through-pattern propagation.",
+  "files": {
+    "figure": "h3_optimization_summary.png",
+    "H3_phase_map": "H3_phase_map_rad.npy",
+    "H3_4L_phase_map": "H3_4L_phase_map_rad.npy"
+  }
+}

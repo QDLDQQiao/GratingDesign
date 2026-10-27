@@ -1,0 +1,325 @@
+{
+  "inputs": {
+    "modality_report": "C:\\Users\\qiaoz\\Documents\\GitHub\\GratingDesign\\results\\modality_comparison\\modality_comparison_report.json",
+    "coverage_report": "C:\\Users\\qiaoz\\Documents\\GitHub\\GratingDesign\\results\\coverage_comparison\\coverage_comparison_report.json"
+  },
+  "geometry": [
+    {
+      "modality": "star_4dir_single",
+      "directions": 4,
+      "exposures": 1,
+      "dark_field_model_rank": 3,
+      "dark_field_design_condition": 1.4142135623730951,
+      "directional_dark_field_identifiable": true
+    },
+    {
+      "modality": "grid_2dir_single",
+      "directions": 2,
+      "exposures": 1,
+      "dark_field_model_rank": 2,
+      "dark_field_design_condition": Infinity,
+      "directional_dark_field_identifiable": false
+    },
+    {
+      "modality": "checkerboard_2dir_single",
+      "directions": 2,
+      "exposures": 1,
+      "dark_field_model_rank": 2,
+      "dark_field_design_condition": Infinity,
+      "directional_dark_field_identifiable": false
+    },
+    {
+      "modality": "checkerboard_4dir_2shot",
+      "directions": 4,
+      "exposures": 2,
+      "dark_field_model_rank": 3,
+      "dark_field_design_condition": 1.4142135623730951,
+      "directional_dark_field_identifiable": true
+    }
+  ],
+  "high_dose_advantage": [
+    {
+      "modality": "checkerboard_2dir_single",
+      "photons_per_pixel": 10000.0,
+      "phase_rmse_rad": 0.01065451221541372,
+      "transmission_rmse": 0.0002762410894997638,
+      "dark_field_mean_rmse": 0.0012688235312977847,
+      "dark_field_anisotropy_rmse": NaN,
+      "dark_field_angle_mae_deg": NaN,
+      "relative_to_star_phase": 1.445837576504997,
+      "relative_to_star_transmission": 0.9975914473044722,
+      "relative_to_star_dark_field_mean": 1.4038356226624347,
+      "relative_to_star_dark_field_angle": NaN,
+      "directional_dark_field_identifiable": false
+    },
+    {
+      "modality": "checkerboard_4dir_2shot",
+      "photons_per_pixel": 10000.0,
+      "phase_rmse_rad": 0.010964496953939593,
+      "transmission_rmse": 0.000375049301132623,
+      "dark_field_mean_rmse": 0.0010493737780791345,
+      "dark_field_anisotropy_rmse": 0.07179188352087777,
+      "dark_field_angle_mae_deg": 5.364852856919898,
+      "relative_to_star_phase": 1.4879030952300492,
+      "relative_to_star_transmission": 1.3544182576348551,
+      "relative_to_star_dark_field_mean": 1.161034812814813,
+      "relative_to_star_dark_field_angle": 1.4095082475289078,
+      "directional_dark_field_identifiable": true
+    },
+    {
+      "modality": "grid_2dir_single",
+      "photons_per_pixel": 10000.0,
+      "phase_rmse_rad": 0.010641049815601444,
+      "transmission_rmse": 0.00028324995546438346,
+      "dark_field_mean_rmse": 0.0013019283165407187,
+      "dark_field_anisotropy_rmse": NaN,
+      "dark_field_angle_mae_deg": NaN,
+      "relative_to_star_phase": 1.4440107032399436,
+      "relative_to_star_transmission": 1.0229026157272059,
+      "relative_to_star_dark_field_mean": 1.4404629988564166,
+      "relative_to_star_dark_field_angle": NaN,
+      "directional_dark_field_identifiable": false
+    },
+    {
+      "modality": "star_4dir_single",
+      "photons_per_pixel": 10000.0,
+      "phase_rmse_rad": 0.007369093450433571,
+      "transmission_rmse": 0.00027690803709893175,
+      "dark_field_mean_rmse": 0.0009038262819484565,
+      "dark_field_anisotropy_rmse": 0.055011152159977685,
+      "dark_field_angle_mae_deg": 3.8061876305621754,
+      "relative_to_star_phase": 1.0,
+      "relative_to_star_transmission": 1.0,
+      "relative_to_star_dark_field_mean": 1.0,
+      "relative_to_star_dark_field_angle": 1.0,
+      "directional_dark_field_identifiable": true
+    }
+  ],
+  "dose_advantage": [
+    {
+      "modality": "checkerboard_2dir_single",
+      "photons_per_pixel": [
+        300.0,
+        1000.0,
+        3000.0,
+        10000.0
+      ],
+      "phase_rmse_rad": [
+        0.05617188226811502,
+        0.03482936707428659,
+        0.018704531692180337,
+        0.01065451221541372
+      ],
+      "transmission_rmse": [
+        0.0016079546117754207,
+        0.0009095766241664407,
+        0.0005179836265655423,
+        0.0002762410894997638
+      ],
+      "dark_field_mean_rmse": [
+        0.006455506873262015,
+        0.0037128115654555143,
+        0.002104320767004603,
+        0.0012688235312977847
+      ],
+      "dark_field_anisotropy_rmse": [
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ],
+      "dark_field_angle_mae_deg": [
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    },
+    {
+      "modality": "checkerboard_4dir_2shot",
+      "photons_per_pixel": [
+        300.0,
+        1000.0,
+        3000.0,
+        10000.0
+      ],
+      "phase_rmse_rad": [
+        0.06655343615392888,
+        0.03731030742529608,
+        0.01916167551898383,
+        0.010964496953939593
+      ],
+      "transmission_rmse": [
+        0.0021577038205691018,
+        0.0011367547946419798,
+        0.0007457314186756928,
+        0.000375049301132623
+      ],
+      "dark_field_mean_rmse": [
+        0.006285583825965967,
+        0.0034529674548263783,
+        0.001982434645281121,
+        0.0010493737780791345
+      ],
+      "dark_field_anisotropy_rmse": [
+        0.5158414093789376,
+        0.24798014330060925,
+        0.14904542755528943,
+        0.07179188352087777
+      ],
+      "dark_field_angle_mae_deg": [
+        30.025356442935674,
+        16.93089876577532,
+        9.322845555057942,
+        5.364852856919898
+      ]
+    },
+    {
+      "modality": "grid_2dir_single",
+      "photons_per_pixel": [
+        300.0,
+        1000.0,
+        3000.0,
+        10000.0
+      ],
+      "phase_rmse_rad": [
+        0.0617687696058767,
+        0.03372386521342792,
+        0.01781038956379212,
+        0.010641049815601444
+      ],
+      "transmission_rmse": [
+        0.001603074366867702,
+        0.0008867234173967344,
+        0.0005501425789698986,
+        0.00028324995546438346
+      ],
+      "dark_field_mean_rmse": [
+        0.006368743344825326,
+        0.0033438287061529097,
+        0.0017393571717180946,
+        0.0013019283165407187
+      ],
+      "dark_field_anisotropy_rmse": [
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ],
+      "dark_field_angle_mae_deg": [
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    },
+    {
+      "modality": "star_4dir_single",
+      "photons_per_pixel": [
+        300.0,
+        1000.0,
+        3000.0,
+        10000.0
+      ],
+      "phase_rmse_rad": [
+        0.04190278157074104,
+        0.02279520068545998,
+        0.015440379407539834,
+        0.007369093450433571
+      ],
+      "transmission_rmse": [
+        0.0015883167018641568,
+        0.0008766928511532634,
+        0.0005275922447797293,
+        0.00027690803709893175
+      ],
+      "dark_field_mean_rmse": [
+        0.004612500965220497,
+        0.0025751833492398553,
+        0.0013241036899098622,
+        0.0009038262819484565
+      ],
+      "dark_field_anisotropy_rmse": [
+        0.34993107647415567,
+        0.18107853929964496,
+        0.07869324409182077,
+        0.055011152159977685
+      ],
+      "dark_field_angle_mae_deg": [
+        22.164609662459707,
+        10.664785268247309,
+        7.238527711839758,
+        3.8061876305621754
+      ]
+    }
+  ],
+  "coverage": {
+    "patterns": [
+      {
+        "pattern": "checkerboard_2dir",
+        "coverage_fraction": 0.84,
+        "mean_visibility_avg": 0.4015053434820186,
+        "min_visibility_worst": 0.0031064614077996396,
+        "balance_cv_worst": 0.12123231728798119,
+        "mean_contamination": 0.03818804425584358,
+        "pass_count": 21,
+        "total_conditions": 25,
+        "energy_count": 5,
+        "distance_count": 5
+      },
+      {
+        "pattern": "checkerboard_4dir_2shot",
+        "coverage_fraction": 0.96,
+        "mean_visibility_avg": 0.17028492172706047,
+        "min_visibility_worst": 0.0989859567981292,
+        "balance_cv_worst": 0.09572062837133127,
+        "mean_contamination": 0.016504562467684242,
+        "pass_count": 24,
+        "total_conditions": 25,
+        "energy_count": 5,
+        "distance_count": 5
+      },
+      {
+        "pattern": "grid_2dir",
+        "coverage_fraction": 0.8,
+        "mean_visibility_avg": 0.40239845564099996,
+        "min_visibility_worst": 0.006792368204272241,
+        "balance_cv_worst": 0.0005347090768776415,
+        "mean_contamination": 0.009079767176161045,
+        "pass_count": 20,
+        "total_conditions": 25,
+        "energy_count": 5,
+        "distance_count": 5
+      },
+      {
+        "pattern": "star_4dir",
+        "coverage_fraction": 0.96,
+        "mean_visibility_avg": 0.17028492172706047,
+        "min_visibility_worst": 0.0989859567981292,
+        "balance_cv_worst": 0.09572062837133127,
+        "mean_contamination": 0.016504562467684242,
+        "pass_count": 24,
+        "total_conditions": 25,
+        "energy_count": 5,
+        "distance_count": 5
+      }
+    ]
+  },
+  "overall_summary": {
+    "star_single_shot_directional_dark_field": true,
+    "star_dark_field_model_rank": 3,
+    "star_vs_grid_phase_rmse_reduction_fraction": 0.3074843574522763,
+    "star_vs_grid_transmission_rmse_reduction_fraction": 0.022389830053297755,
+    "star_coverage_fraction": 0.96,
+    "grid_coverage_fraction": 0.8,
+    "star_coverage_advantage_fraction_points": 0.15999999999999992,
+    "star_coverage_vs_grid_visibility_tradeoff": "star has lower raw mean visibility but covers four directions; grid has higher visibility but only two directions",
+    "main_advantage": "single-shot rank-three directional dark-field with overdetermined phase-gradient fusion",
+    "main_tradeoff": "four simultaneous carriers divide modulation budget and reduce raw visibility versus two-direction patterns"
+  },
+  "files": {
+    "summary_csv": "grating_advantage_summary.csv",
+    "figure": "grating_advantage_summary.png",
+    "coverage_figure": "grating_advantage_coverage.png"
+  }
+}

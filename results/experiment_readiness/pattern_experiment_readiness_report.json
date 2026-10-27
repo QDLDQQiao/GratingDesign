@@ -1,0 +1,482 @@
+{
+  "design": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 128,
+    "n_supercells": 2,
+    "image_size_px": null,
+    "wavelength_m": 1e-10,
+    "z_m": 0.08,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "frequency_cycles_per_field": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "method": "Accuracy uses the visibility-calibrated photon-noise comparison. Spatial response uses noise-free sinusoidal phase, transmission, and isotropic dark-field phantoms, reconstructed with the current 3-bin Fourier envelope, 5 px phase/T smoothing, and 16 px D smoothing. The 50% cutoff is a reconstruction-pipeline metric, not a detector MTF.",
+  "rows": [
+    {
+      "pattern": "S4",
+      "is_proxy": false,
+      "carrier_count": 4,
+      "mean_visibility": 0.19535494745848758,
+      "directional_dark_field_identifiable": true,
+      "phase_transfer": [
+        0.9924001664727915,
+        0.9699865249189906,
+        0.9336746698553824,
+        1.3784171447435885e-11,
+        2.509477616490215e-11,
+        2.7373967259090488e-11
+      ],
+      "transmission_transfer": [
+        0.9924981858119107,
+        0.9703301492737839,
+        0.9344776526628866,
+        1.7447974136854832e-15,
+        9.82607165488161e-15,
+        2.6662354121230824e-14
+      ],
+      "dark_field_transfer": [
+        0.9257914612875103,
+        0.7346598616696781,
+        0.49962814496409086,
+        1.6055612342544195e-13,
+        2.434346869914339e-13,
+        1.7740838681555167e-13
+      ],
+      "phase_resolution_um": 16.16403464236995,
+      "transmission_resolution_um": 16.16188797089473,
+      "dark_field_resolution_um": 18.676516339654757,
+      "resolution_note": null,
+      "phase_rmse_rad": 0.007369093450433571,
+      "transmission_rmse": 0.00027690803709893175,
+      "dark_field_mean_rmse": 0.0009038262819484565,
+      "dark_field_anisotropy_rmse": 0.055011152159977685,
+      "dark_field_angle_mae_deg": 3.8061876305621754,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "H3",
+      "is_proxy": false,
+      "carrier_count": 3,
+      "mean_visibility": 0.04088983814587232,
+      "directional_dark_field_identifiable": true,
+      "phase_transfer": [
+        0.9923997907888459,
+        0.9699871280645966,
+        0.933676009378073,
+        6.546823671383702e-12,
+        1.1730034053305612e-11,
+        1.2549761008856861e-11
+      ],
+      "transmission_transfer": [
+        0.9924981832166514,
+        0.970330109222541,
+        0.9344774592031821,
+        4.561984701433572e-18,
+        2.745954343433096e-16,
+        2.3999160575032553e-16
+      ],
+      "dark_field_transfer": [
+        0.9257914605758227,
+        0.7346620043081366,
+        0.4996314088380649,
+        1.2584159334399496e-13,
+        1.9170484099068e-13,
+        1.4059909375099852e-13
+      ],
+      "phase_resolution_um": 16.164031057794805,
+      "transmission_resolution_um": 16.161888487571513,
+      "dark_field_resolution_um": 18.676429887747673,
+      "resolution_note": null,
+      "phase_rmse_rad": 0.051126424057955366,
+      "transmission_rmse": 0.00027897237659612576,
+      "dark_field_mean_rmse": 0.0046587664709333825,
+      "dark_field_anisotropy_rmse": 0.3589749814144483,
+      "dark_field_angle_mae_deg": 20.368305534306216,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "H3_4L",
+      "is_proxy": false,
+      "carrier_count": 3,
+      "mean_visibility": 0.06943012522793672,
+      "directional_dark_field_identifiable": true,
+      "phase_transfer": [
+        0.9923997907888799,
+        0.9699871280645691,
+        0.9336760093780857,
+        6.546823676677658e-12,
+        1.1730034048011656e-11,
+        1.2549760954593813e-11
+      ],
+      "transmission_transfer": [
+        0.9924981835541983,
+        0.9703301144299483,
+        0.9344774843481364,
+        5.516639579949256e-16,
+        1.1555991519648605e-15,
+        1.6408374238126063e-15
+      ],
+      "dark_field_transfer": [
+        0.9257914603024324,
+        0.7346620007930222,
+        0.4996313963097997,
+        1.2536432539720404e-13,
+        1.9051528799936542e-13,
+        1.3997226639508882e-13
+      ],
+      "phase_resolution_um": 16.16403105779477,
+      "transmission_resolution_um": 16.161888420416357,
+      "dark_field_resolution_um": 18.676430219394582,
+      "resolution_note": null,
+      "phase_rmse_rad": 0.028706887232486315,
+      "transmission_rmse": 0.00028136871501484984,
+      "dark_field_mean_rmse": 0.002782962477237883,
+      "dark_field_anisotropy_rmse": 0.1971266352452522,
+      "dark_field_angle_mae_deg": 10.961098203164166,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "DRH6",
+      "is_proxy": false,
+      "carrier_count": 6,
+      "mean_visibility": 0.18073476374125375,
+      "directional_dark_field_identifiable": true,
+      "phase_transfer": [
+        0.9924013889444144,
+        0.9699781747874536,
+        0.9336847043056737,
+        3.2057106225056775e-11,
+        5.3953735919850905e-06,
+        2.2149042654644307e-05
+      ],
+      "transmission_transfer": [
+        0.9924981885003212,
+        0.9703301907696753,
+        0.9344778531350303,
+        5.884350643246149e-15,
+        3.782712428468209e-14,
+        9.103006832971551e-14
+      ],
+      "dark_field_transfer": [
+        0.9257914665150966,
+        0.7346654611357549,
+        0.49962829989085883,
+        3.4567179790502925e-13,
+        4.680912145125537e-08,
+        3.3393263846238922e-06
+      ],
+      "phase_resolution_um": 16.16400779020837,
+      "transmission_resolution_um": 16.161887435489934,
+      "dark_field_resolution_um": 18.67651200561093,
+      "resolution_note": null,
+      "phase_rmse_rad": 0.008497557214695388,
+      "transmission_rmse": 0.00028724141253679957,
+      "dark_field_mean_rmse": 0.0008762289942725116,
+      "dark_field_anisotropy_rmse": 0.04445162422653837,
+      "dark_field_angle_mae_deg": 3.1672909633711153,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "FATO_proxy",
+      "is_proxy": true,
+      "carrier_count": 4,
+      "mean_visibility": 0.19535473363289013,
+      "directional_dark_field_identifiable": true,
+      "phase_transfer": [
+        0.99240016647279,
+        0.9699865249189943,
+        0.9336746698553829,
+        1.3784171450082863e-11,
+        2.5094776158284705e-11,
+        2.7373967272325378e-11
+      ],
+      "transmission_transfer": [
+        0.9924981858119098,
+        0.9703301492737343,
+        0.9344776526626333,
+        2.023037601561868e-15,
+        9.758753417572544e-15,
+        2.5494719437587578e-14
+      ],
+      "dark_field_transfer": [
+        0.9257914612875118,
+        0.7346598616697108,
+        0.49962814496421715,
+        1.6080605685919582e-13,
+        2.433294136845981e-13,
+        1.7739602208873595e-13
+      ],
+      "phase_resolution_um": 16.164034642369945,
+      "transmission_resolution_um": 16.161887970895407,
+      "dark_field_resolution_um": 18.676516339651418,
+      "resolution_note": null,
+      "phase_rmse_rad": 0.007706544070127762,
+      "transmission_rmse": 0.00028394907972657547,
+      "dark_field_mean_rmse": 0.000914564461417125,
+      "dark_field_anisotropy_rmse": 0.055335103069876004,
+      "dark_field_angle_mae_deg": 3.382533101588037,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "CUC_square",
+      "is_proxy": false,
+      "carrier_count": 2,
+      "mean_visibility": 0.35421308358176395,
+      "directional_dark_field_identifiable": false,
+      "phase_transfer": [
+        0.9924005829391994,
+        0.9699857511195439,
+        0.9336729591513875,
+        2.3975511951626163e-11,
+        4.3922169123765025e-11,
+        4.826643701480416e-11
+      ],
+      "transmission_transfer": [
+        0.9924981883155788,
+        0.9703301879093862,
+        0.9344778392748154,
+        6.560090916663924e-15,
+        3.4905288341588443e-14,
+        8.745996409841487e-14
+      ],
+      "dark_field_transfer": [
+        0.9257914577545745,
+        0.7346598985107656,
+        0.4996281217502117,
+        8.554926187631444e-14,
+        1.2603258164689894e-13,
+        8.944709763351757e-14
+      ],
+      "phase_resolution_um": 16.16403922024477,
+      "transmission_resolution_um": 16.161887472506667,
+      "dark_field_resolution_um": 18.676516952348756,
+      "resolution_note": null,
+      "phase_rmse_rad": 0.005646992810573942,
+      "transmission_rmse": 0.0002865944918631567,
+      "dark_field_mean_rmse": 0.0007591447372864348,
+      "dark_field_anisotropy_rmse": null,
+      "dark_field_angle_mae_deg": null,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "CUC_hex",
+      "is_proxy": false,
+      "carrier_count": 3,
+      "mean_visibility": 0.20350427882076064,
+      "directional_dark_field_identifiable": true,
+      "phase_transfer": [
+        0.9923997907888319,
+        0.9699871280645614,
+        0.9336760093780857,
+        6.546823667413235e-12,
+        1.1730033992425119e-11,
+        1.254976069916044e-11
+      ],
+      "transmission_transfer": [
+        0.9924981851399061,
+        0.9703301388928701,
+        0.9344776024719792,
+        4.644214072824573e-16,
+        4.8679394340345235e-15,
+        1.7693198752087362e-14
+      ],
+      "dark_field_transfer": [
+        0.9257914588697773,
+        0.7346619841622758,
+        0.4996313373754905,
+        1.175199315333415e-13,
+        1.8003407599535747e-13,
+        1.3233638242460447e-13
+      ],
+      "phase_resolution_um": 16.16403105779477,
+      "transmission_resolution_um": 16.16188810494059,
+      "dark_field_resolution_um": 18.67643177950115,
+      "resolution_note": null,
+      "phase_rmse_rad": 0.010688074280476533,
+      "transmission_rmse": 0.0002847070326866424,
+      "dark_field_mean_rmse": 0.0010503179229725346,
+      "dark_field_anisotropy_rmse": 0.060353022691846024,
+      "dark_field_angle_mae_deg": 3.7556700956920737,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "RBN",
+      "is_proxy": false,
+      "carrier_count": 0,
+      "mean_visibility": null,
+      "directional_dark_field_identifiable": false,
+      "phase_transfer": [],
+      "transmission_transfer": [],
+      "dark_field_transfer": [],
+      "phase_resolution_um": null,
+      "transmission_resolution_um": null,
+      "dark_field_resolution_um": null,
+      "resolution_note": "Not evaluated by the current single-image carrier-demodulation resolution test.",
+      "phase_rmse_rad": null,
+      "transmission_rmse": null,
+      "dark_field_mean_rmse": null,
+      "dark_field_anisotropy_rmse": null,
+      "dark_field_angle_mae_deg": null,
+      "accuracy_note": "Requires a speckle/random-mask retrieval method; carrier-demodulation metrics are not applicable."
+    },
+    {
+      "pattern": "MPG_proxy",
+      "is_proxy": true,
+      "carrier_count": 2,
+      "mean_visibility": 0.0029123080755897902,
+      "directional_dark_field_identifiable": false,
+      "phase_transfer": [
+        0.992398900829068,
+        0.9643822517958416,
+        0.933680149256607,
+        2.5797685957225787e-13,
+        1.422422595390199,
+        65.22208174849916
+      ],
+      "transmission_transfer": [
+        0.9924981827370732,
+        0.970330131960835,
+        0.9344774234775794,
+        1.1190862962475652e-17,
+        4.860676082686573e-12,
+        2.5301637315203513e-15
+      ],
+      "dark_field_transfer": [
+        0.9257914511533462,
+        0.7352109527530208,
+        0.4996381408617666,
+        5.093658277375072e-15,
+        0.01818584974371264,
+        0.023095571099174744
+      ],
+      "phase_resolution_um": 16.164019979479196,
+      "transmission_resolution_um": 16.161888582984638,
+      "dark_field_resolution_um": 18.67622940613576,
+      "resolution_note": null,
+      "phase_rmse_rad": 2.894098203131493,
+      "transmission_rmse": 0.000277092711811862,
+      "dark_field_mean_rmse": 0.08124662132055163,
+      "dark_field_anisotropy_rmse": null,
+      "dark_field_angle_mae_deg": null,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "G2_grid",
+      "is_proxy": false,
+      "carrier_count": 2,
+      "mean_visibility": 0.405260412308048,
+      "directional_dark_field_identifiable": false,
+      "phase_transfer": [
+        0.9924005829392051,
+        0.9699857511195346,
+        0.9336729591513875,
+        2.3975511951626163e-11,
+        4.3922168708189486e-11,
+        4.826643701612765e-11
+      ],
+      "transmission_transfer": [
+        0.9924981891201059,
+        0.9703302003245066,
+        0.9344778992405225,
+        5.935600245688653e-15,
+        4.5624403740753985e-14,
+        1.134642668107977e-13
+      ],
+      "dark_field_transfer": [
+        0.9257914570101707,
+        0.7346598900563348,
+        0.4996280918217113,
+        7.167886005466235e-14,
+        1.0616671247168707e-13,
+        7.460169790235707e-14
+      ],
+      "phase_resolution_um": 16.16403922024477,
+      "transmission_resolution_um": 16.161887312355155,
+      "dark_field_resolution_um": 18.676517744610653,
+      "resolution_note": null,
+      "phase_rmse_rad": 0.005277143178907079,
+      "transmission_rmse": 0.0003016367649668696,
+      "dark_field_mean_rmse": 0.0006660474431329107,
+      "dark_field_anisotropy_rmse": null,
+      "dark_field_angle_mae_deg": null,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "C2_checkerboard",
+      "is_proxy": false,
+      "carrier_count": 2,
+      "mean_visibility": 0.41445740141103815,
+      "directional_dark_field_identifiable": false,
+      "phase_transfer": [
+        0.9923997500063743,
+        0.9699872987359832,
+        0.9336763806212542,
+        8.031263577028252e-12,
+        1.4722231687692397e-11,
+        1.6190098746537805e-11
+      ],
+      "transmission_transfer": [
+        0.9924981827330471,
+        0.9703301017618601,
+        0.9344774231778564,
+        2.5631393796242e-16,
+        1.1448175968272144e-16,
+        1.0962437332290843e-16
+      ],
+      "dark_field_transfer": [
+        0.9257914653733308,
+        0.7346598308895755,
+        0.4996281895868206,
+        2.197436864527244e-13,
+        3.3580449408129044e-13,
+        2.47045716570686e-13
+      ],
+      "phase_resolution_um": 16.164030064338608,
+      "transmission_resolution_um": 16.161888583785114,
+      "dark_field_resolution_um": 18.676515160228334,
+      "resolution_note": null,
+      "phase_rmse_rad": 0.005138593406806504,
+      "transmission_rmse": 0.00028015252478597833,
+      "dark_field_mean_rmse": 0.0006948086594220126,
+      "dark_field_anisotropy_rmse": null,
+      "dark_field_angle_mae_deg": null,
+      "accuracy_note": "Visibility-calibrated carrier-demodulation benchmark."
+    },
+    {
+      "pattern": "C2_4dir_2shot",
+      "is_proxy": false,
+      "carrier_count": 4,
+      "mean_visibility": 0.40985890685954307,
+      "directional_dark_field_identifiable": false,
+      "phase_transfer": [],
+      "transmission_transfer": [],
+      "dark_field_transfer": [],
+      "phase_resolution_um": null,
+      "transmission_resolution_um": null,
+      "dark_field_resolution_um": null,
+      "resolution_note": "Not evaluated by the current single-image carrier-demodulation resolution test.",
+      "phase_rmse_rad": null,
+      "transmission_rmse": null,
+      "dark_field_mean_rmse": null,
+      "dark_field_anisotropy_rmse": null,
+      "dark_field_angle_mae_deg": null,
+      "accuracy_note": "Physical visibility is measured across both exposures; phase/T/D metrics await a dedicated two-image fusion reconstruction."
+    }
+  ],
+  "files": {
+    "resolution_transfer": "pattern_resolution_transfer.png",
+    "scorecard": "pattern_experiment_scorecard.png"
+  }
+}

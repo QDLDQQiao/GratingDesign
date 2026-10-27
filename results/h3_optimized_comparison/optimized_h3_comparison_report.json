@@ -1,0 +1,113 @@
+{
+  "design": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 128,
+    "n_supercells": 2,
+    "image_size_px": null,
+    "wavelength_m": 1e-10,
+    "z_m": 0.08,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "reconstruction_settings": {
+    "iterations": 160,
+    "shortlisted_candidates": 16,
+    "search_photons_per_pixel": 3000.0,
+    "search_repeats": 2,
+    "validation_photons_per_pixel": 10000.0,
+    "validation_repeats": 5,
+    "seed": 73,
+    "phase_smoothing_sigma_px": 5.0,
+    "dark_field_smoothing_sigma_px": 16.0
+  },
+  "method": "All patterns use the same propagated visibility measurement, 10,000 photons/pixel, five noise repeats, 5 px phase/T smoothing, and 16 px D smoothing. H3 and H3-4L use their selected joint-optimization candidates.",
+  "rows": [
+    {
+      "pattern": "S4",
+      "phase_rmse_rad": 0.007369093450433571,
+      "transmission_rmse": 0.00027690803709893175,
+      "dark_field_mean_rmse": 0.0009038262819484565,
+      "dark_field_anisotropy_rmse": 0.055011152159977685,
+      "dark_field_angle_mae_deg": 3.8061876305621754,
+      "mean_visibility": 0.19535494745848758,
+      "min_visibility": 0.194273751671936,
+      "balance_cv": 0.005529791418909072,
+      "contamination_mean": 0.008500559514969213,
+      "directional_dark_field_identifiable": true
+    },
+    {
+      "pattern": "H3",
+      "phase_rmse_rad": 0.00553110907256212,
+      "transmission_rmse": 0.00029347403614711384,
+      "dark_field_mean_rmse": 0.0006552855911993103,
+      "dark_field_anisotropy_rmse": 0.026335453555774036,
+      "dark_field_angle_mae_deg": 1.8206148959238786,
+      "mean_visibility": 0.42540373948188465,
+      "min_visibility": 0.40503902817870946,
+      "balance_cv": 0.03451406334867483,
+      "contamination_mean": 0.0,
+      "directional_dark_field_identifiable": true
+    },
+    {
+      "pattern": "H3_4L",
+      "phase_rmse_rad": 0.005558762558324219,
+      "transmission_rmse": 0.00029096729672434333,
+      "dark_field_mean_rmse": 0.0007123274997361676,
+      "dark_field_anisotropy_rmse": 0.02765772781407492,
+      "dark_field_angle_mae_deg": 2.1082875692360075,
+      "mean_visibility": 0.40074047117591755,
+      "min_visibility": 0.3760826853499788,
+      "balance_cv": 0.04372263304034046,
+      "contamination_mean": 0.0,
+      "directional_dark_field_identifiable": true
+    },
+    {
+      "pattern": "CUC_hex",
+      "phase_rmse_rad": 0.010688074280476533,
+      "transmission_rmse": 0.0002847070326866424,
+      "dark_field_mean_rmse": 0.0010503179229725346,
+      "dark_field_anisotropy_rmse": 0.060353022691846024,
+      "dark_field_angle_mae_deg": 3.7556700956920737,
+      "mean_visibility": 0.20350427882076064,
+      "min_visibility": 0.15473908883398602,
+      "balance_cv": 0.31284430718556755,
+      "contamination_mean": 0.0,
+      "directional_dark_field_identifiable": true
+    },
+    {
+      "pattern": "G2_grid",
+      "phase_rmse_rad": 0.005277143178907079,
+      "transmission_rmse": 0.0003016367649668696,
+      "dark_field_mean_rmse": 0.0006660474431329107,
+      "dark_field_anisotropy_rmse": NaN,
+      "dark_field_angle_mae_deg": NaN,
+      "mean_visibility": 0.405260412308048,
+      "min_visibility": 0.4051993181251142,
+      "balance_cv": 0.00015075290129084673,
+      "contamination_mean": 0.00013693786602642126,
+      "directional_dark_field_identifiable": false
+    },
+    {
+      "pattern": "C2_checkerboard",
+      "phase_rmse_rad": 0.005138593406806504,
+      "transmission_rmse": 0.00028015252478597833,
+      "dark_field_mean_rmse": 0.0006948086594220126,
+      "dark_field_anisotropy_rmse": NaN,
+      "dark_field_angle_mae_deg": NaN,
+      "mean_visibility": 0.41445740141103815,
+      "min_visibility": 0.41365277616262075,
+      "balance_cv": 0.001941394328290415,
+      "contamination_mean": 0.0004466739086349887,
+      "directional_dark_field_identifiable": false
+    }
+  ],
+  "files": {
+    "comparison": "optimized_h3_comparison.png",
+    "patterns": "optimized_h3_patterns.png"
+  }
+}

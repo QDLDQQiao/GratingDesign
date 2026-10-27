@@ -1,0 +1,71 @@
+{
+  "design": {
+    "supercell_um": 56.0,
+    "m": 7,
+    "n": 5,
+    "samples_per_supercell": 128,
+    "n_supercells": 2,
+    "image_size_px": null,
+    "wavelength_m": 1e-10,
+    "z_m": 0.08,
+    "fill_factor": 0.5,
+    "phase_depth_rad": 3.141592653589793,
+    "detector_harmonic": 2,
+    "guard_bins": 2,
+    "kernel": "asm"
+  },
+  "photons_per_pixel": 3000.0,
+  "repeats": 2,
+  "method": "Binary pi masks are propagated with the configured monochromatic model. Reconstruction trials use each mask's measured mean visibility as the calibrated carrier contrast.",
+  "rows": [
+    {
+      "pattern": "star_4dir",
+      "description": "Four star carriers: axial plus diagonal directions.",
+      "carrier_count": 4,
+      "mean_visibility": 0.19535494745848758,
+      "min_visibility": 0.194273751671936,
+      "balance_cv": 0.005529791418909072,
+      "contamination_mean": 0.008500559514969213,
+      "phase_rmse_rad": 0.014945329008739584,
+      "transmission_rmse": 0.0004905766880681385,
+      "dark_field_mean_rmse": 0.001327483465508727,
+      "dark_field_anisotropy_rmse": 0.07464907799769216,
+      "dark_field_angle_mae_deg": 6.378290192258348,
+      "directional_dark_field_identifiable": true
+    },
+    {
+      "pattern": "grid_2dir",
+      "description": "Two orthogonal axial carriers.",
+      "carrier_count": 2,
+      "mean_visibility": 0.405260412308048,
+      "min_visibility": 0.4051993181251142,
+      "balance_cv": 0.00015075290129084673,
+      "contamination_mean": 0.00013693786602642126,
+      "phase_rmse_rad": 0.00983832403901818,
+      "transmission_rmse": 0.0004696553565697476,
+      "dark_field_mean_rmse": 0.001114614823828557,
+      "dark_field_anisotropy_rmse": null,
+      "dark_field_angle_mae_deg": null,
+      "directional_dark_field_identifiable": false
+    },
+    {
+      "pattern": "checkerboard_2dir",
+      "description": "Two diagonal checkerboard carriers.",
+      "carrier_count": 2,
+      "mean_visibility": 0.41445740141103815,
+      "min_visibility": 0.41365277616262075,
+      "balance_cv": 0.001941394328290415,
+      "contamination_mean": 0.0004466739086349887,
+      "phase_rmse_rad": 0.009697684290163957,
+      "transmission_rmse": 0.00043662954702502696,
+      "dark_field_mean_rmse": 0.0011039197607242955,
+      "dark_field_anisotropy_rmse": null,
+      "dark_field_angle_mae_deg": null,
+      "directional_dark_field_identifiable": false
+    }
+  ],
+  "files": {
+    "pattern_images": "designed_pattern_images.png",
+    "comparison_plot": "pattern_simulation_comparison.png"
+  }
+}
